@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="b-4.signup.css">
+    <script src="beforeLogin.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <a href="e-homepage.html"><img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="" height="55px" width="176px"></a>
+        </div>
+        <div>
+            <a href="e-homepage.html"><button id="sign-out">Sign Out</button></a>
+        </div>
+    </div>
+    <div id="bdy">
+        <div id="up">
+            <div id="txt-up">
+                <p style="font-size: 13px; color: rgb(30, 30, 30);">STEP 3 OF 3</p>
+            </div>
+            <div id="txt-down">
+                <p style="font-size: 28px; font-weight: 600; color: rgb(30, 30, 30); margin-top: 4px;">Choose the plan that’s right for you</p>
+            </div>
+        </div>
+        <div id="down">
+            <div id="plan-1" class="plan" onclick="selectFun('plan-1' ,'plan-2', 'plan-3', 'plan-4')">
+                <div id="gradient-1">
+                    <p style="font-size: 16px;">Premium</p>
+                    <p style="font-size: 12px; margin-top: 3px;">4K + HDR</p>
+                </div>
+                <div id="tables" style="padding: 10px;">
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Monthly Price</p>
+                        <p style="transform: scaleY(0.9);">₹649</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Video and sound quality</p>
+                        <p style="transform: scaleY(0.9);">Best</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Resolution</p>
+                        <p style="transform: scaleY(0.9);">4K (Ultra HD) + HDR</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Spatial audio (immersive sound)</p>
+                        <p style="transform: scaleY(0.9);">Included</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Supported devices</p>
+                        <p style="transform: scaleY(0.9);">TV, computer, mobile phone, tablet</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Devices your household can watch at the same time</p>
+                        <p style="transform: scaleY(0.9);">4</p>
+                    </div>
+                    <div id="table" style="border: 0px;">
+                        <p id="gray" style="transform: scaleY(0.9);">Download devices</p>
+                        <p style="transform: scaleY(0.9);">6</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="plan-2" class="plan" onclick="selectFun('plan-2', 'plan-1', 'plan-3', 'plan-4')">
+                <div id="gradient-2">
+                    <p style="font-size: 16px;">Standard</p>
+                    <p style="font-size: 12px; margin-top: 3px;">1080p</p>
+                </div>
+                <div id="tables" style="padding: 10px;">
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Monthly Price</p>
+                        <p style="transform: scaleY(0.9);">₹499</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Video and sound quality</p>
+                        <p style="transform: scaleY(0.9);">Great</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Resolution</p>
+                        <p style="transform: scaleY(0.9);">1080p (Full HD)</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Spatial audio (immersive sound)</p>
+                        <p style="transform: scaleY(0.9);">Not Included</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Supported devices</p>
+                        <p style="transform: scaleY(0.9);">TV, computer, mobile phone, tablet</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Devices your household can watch at the same time</p>
+                        <p style="transform: scaleY(0.9);">2</p>
+                    </div>
+                    <div id="table" style="border: 0px;">
+                        <p id="gray" style="transform: scaleY(0.9);">Download devices</p>
+                        <p style="transform: scaleY(0.9);">2</p>
+                    </div>
+                </div>
+            </div>
+            <div id="plan-3" class="plan" onclick="selectFun('plan-3','plan-1', 'plan-2', 'plan-4')">
+                <div id="gradient-3">
+                    <p style="font-size: 16px;">Basic</p>
+                    <p style="font-size: 12px; margin-top: 3px;">720p</p>
+                </div>
+                <div id="tables" style="padding: 10px;">
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Monthly Price</p>
+                        <p style="transform: scaleY(0.9);">₹199</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Video and sound quality</p>
+                        <p style="transform: scaleY(0.9);">Good</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Resolution</p>
+                        <p style="transform: scaleY(0.9);">720p (HD)</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Spatial audio (immersive sound)</p>
+                        <p style="transform: scaleY(0.9);">Not Included</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Supported devices</p>
+                        <p style="transform: scaleY(0.9);">TV, computer, mobile phone, tablet</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Devices your household can watch at the same time</p>
+                        <p style="transform: scaleY(0.9);">1</p>
+                    </div>
+                    <div id="table" style="border: 0px;">
+                        <p id="gray" style="transform: scaleY(0.9);">Download devices</p>
+                        <p style="transform: scaleY(0.9);">1</p>
+                    </div>
+                </div>
+            </div>
+            <div id="plan-4" class="plan" onclick="selectFun('plan-4','plan-1', 'plan-2', 'plan-3')">
+                <div id="gradient-4">
+                    <p style="font-size: 16px;">7-Days Trial</p>
+                    <p style="font-size: 12px; margin-top: 3px;">480p</p>
+                </div>
+                <div id="tables" style="padding: 10px;">
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Monthly Price</p>
+                        <p style="transform: scaleY(0.9);">Free</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Video and sound quality</p>
+                        <p style="transform: scaleY(0.9);">Fair</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Resolution</p>
+                        <p style="transform: scaleY(0.9);">480p</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Spatial audio (immersive sound)</p>
+                        <p style="transform: scaleY(0.9);">Not Included</p>
+                    </div>
+                    <div id="table" style="padding-bottom: 31px;">
+                        <p id="gray" style="transform: scaleY(0.9);">Supported devices</p>
+                        <p style="transform: scaleY(0.9);">Mobile phone, tablet</p>
+                    </div>
+                    <div id="table">
+                        <p id="gray" style="transform: scaleY(0.9);">Devices your household can watch at the same time</p>
+                        <p style="transform: scaleY(0.9);">1</p>
+                    </div>
+                    <div id="table" style="border: 0px;">
+                        <p id="gray" style="transform: scaleY(0.9);">Download devices</p>
+                        <p style="transform: scaleY(0.9);">1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bdy-down">
+        <div id="text">
+            <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our Terms of Use for more details. Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard, and 1 with Basic and Mobile.</p>
+        </div>
+
+        <div style="margin: auto; margin-top: -10px;">
+            <a class="bttn" href="#"><button id="bttn">Next</button></a>
+        </div>
+    </div>
+</body>
+</html>
