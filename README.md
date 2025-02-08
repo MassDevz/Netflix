@@ -24,11 +24,6 @@ This is a Netflix Clone website built using HTML, CSS, and JavaScript. It replic
    ┣ 📁 js/               # JavaScript files  
    ┗ 📜 README.md         # Project description  
    
-🌐 Live Demo  
-<a href="https://massdevz.github.io/Netflix/" target="_blank">
-  <button style="padding: 10px 20px; background-color: #e50914; color: white; border: none; font-size: 16px; cursor: pointer; border-radius: 5px;">View Website</button>
-</a>
-
 
 📌 How to Use
   1️⃣ Open the website link in your browser.
