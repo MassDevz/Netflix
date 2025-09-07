@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Netflix</title>
+    <link rel="stylesheet" href="b-afterLogin.css">
+    <script src="afterLogin.js"></script>
+</head>
+<body>
+    <div id="ply">
+        <div id="cls" style="z-index: 3; position: relative;">
+            <svg onclick="cls()" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="42" height="42" viewBox="0,0,300,150" style="margin-left: 96%; margin-top:1%">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M4.99023,3.99023c-0.40692,0.00011 -0.77321,0.24676 -0.92633,0.62377c-0.15312,0.37701 -0.06255,0.80921 0.22907,1.09303l6.29297,6.29297l-6.29297,6.29297c-0.26124,0.25082 -0.36647,0.62327 -0.27511,0.97371c0.09136,0.35044 0.36503,0.62411 0.71547,0.71547c0.35044,0.09136 0.72289,-0.01388 0.97371,-0.27511l6.29297,-6.29297l6.29297,6.29297c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-6.29297,-6.29297l6.29297,-6.29297c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-6.29297,6.29297l-6.29297,-6.29297c-0.18827,-0.19353 -0.4468,-0.30272 -0.7168,-0.30273z"></path></g></g>
+            </svg>
+        </div>
+        <iframe id="vid" style="position: relative; z-index: 2; margin-top:-60px;" width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay></iframe>
+    </div>
+    <div id="header" style="z-index: 2;">
+        <div id="left">
+            <div id="logo" style="margin-top: 6px;">
+                <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="" height="30px" width="100px">
+            </div>
+            <div id="nav">
+                <a href="#" style="color: rgb(255, 255, 255);">Home</a>
+                <a href="e-afterLogin-tv_shows.html" >TV Shows</a>
+                <a href="e-afterLogin-movies.html">Movies</a>
+                <a href="e-afterLogin-popular.html">New & Popular</a>
+                <a href="">My List</a>
+                <a href="">Browse by Languages</a>
+            </div>
+        </div>
+        <div id="right">
+            <input type="search" name="" id="search" placeholder="Titles, people, genres">
+            <svg onclick="myfunction()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="rgba(255,255,255,1)"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="rgba(255,255,255,1)"><path d="M5 18H19V11.0314C19 7.14806 15.866 4 12 4C8.13401 4 5 7.14806 5 11.0314V18ZM12 2C16.9706 2 21 6.04348 21 11.0314V20H3V11.0314C3 6.04348 7.02944 2 12 2ZM9.5 21H14.5C14.5 22.3807 13.3807 23.5 12 23.5C10.6193 23.5 9.5 22.3807 9.5 21Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="23"><path fill="#e8e8e8" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+        </div>
+    </div>
+
+    <div id="first-main"> 
+        <div id="movie-logo" style="height: 100%; width: 610px; padding-top: 230px; padding-left: 55px;">
+            <img height="240px" width="610px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABeDVEm7M475Nays0UOb2c1Gm5Jir965cNMkP1nMeRYhadWcaEVancXThY8Bfc5GEpap4ZNzPPtO0mehWQzfV6sHUMXC_71u77jiGXqbBQapz.webp?r=21c" alt="">
+            <p style="height: 70px; width: 610px; color: white; font-size: 20px; margin-top: 30px; margin-left: 5px;">After walking from his hibernation decades ahead of schedule, a lonely guy on an interplanetary journey faces an ethical dilemma over another passenger.</p>
+
+            <div id="logo-footer" style="width: 325px; position: absolute; display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+                <div onclick="play('7BWWWQzTpNU?si=sA2KcAA-wAfFBY2W')" id="play">
+                    <svg style="margin-right: 5px; padding-left:-35px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34" fill="rgba(0,0,0,1)"><path d="M6 20.1957V3.80421C6 3.01878 6.86395 2.53993 7.53 2.95621L20.6432 11.152C21.2699 11.5436 21.2699 12.4563 20.6432 12.848L7.53 21.0437C6.86395 21.46 6 20.9812 6 20.1957Z"></path></svg>
+                    <p  style="font-size: 21px; margin-left: 5px; transform: scaleY(01.05), translateX(1.03); margin-right: 10px;">Play</p>
+                </div>
+
+                <a href="https://www.imdb.com/title/tt1355644/">
+                    <div id="more">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 7H13V9H11V7ZM11 11H13V17H11V11Z"></path></svg>
+                        <p  style="color: white; font-size: 19px; margin-left: 5px; transform: scaleY(1.1), translateX(1.03); ">More Info</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div id="Content" style="padding-top: 161px;">
+            <div id="p-text">
+                <p style="color: rgb(255, 255, 255); font-size: 22px; font-weight: 550; transform: scaleY(1.05); margin-left: 55px;">Popular on Netflix</p>
+            </div>
+            <div id="content">
+                <div id="l-bttn" onclick="leftfun('content')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                </div>
+                <div id="first" class="content" onclick="play('NqeaCngRj5I?si=8kxHfFEG3mNkYuUL')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABd0HEa2E-MndNBECO0qrllYj_x8MUrug2CC19JElrHTEHXyB-cS1TWq0nEh2E2l8tV20uWlmYTC7FscFeAk9-gj5xjlViLVdkjhUgwLn0aOguU0aeVO2ZvYPNsLsefQIukTp3jvTy3UbwUYSabRxztyuruUdmbXWB3-FYuwFik1YQPTT9wkQ2jfJN6U7DucCKKgOYz7hk1ADh-rW2JOl2Na2UrFphjtq8lBIKm4bYw-64NtENUs-uOwrRaER7LZRNOptTKwvk6y9xYjT3dgrnso8u6Cw59NNsD10bDDlVx2zMN2Nu-twnSie3CC1eylrtCGVagelT1KtQlq0HPXbvsa9v3abtA19IncXcO4Do3l55uCjn1w.jpg?r=0f5" alt="">
+                </div>
+                <div id="sec" class="content" onclick="play('fjmthQ0AZnI?si=sSuqAOhF-1jbhlCn')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABfW98ptk2b8myFTS01AGXlkLdxqs0-IFwUq4TtjdQ1EfTxkaehKn5hhN01ZfYq4hdeUyDDePFH9KlfGpa5v5TKL5c_-cBbIBEYs-8AyDgJ3_xWLRgV3Ij3uCa8zgNUj41S48pQFT6F3R8qv2BcquulVrlLgZf7ORb9VMVjQQKn2FsdYZ_xXDaYOG_AJFlxLFPO4IW9I0c-0YuGXDVDZFN-jRJAmk2w8V05aifiUA8FOxeR9PRnKQg3j708acU5rwUeu53EwYTWYf_zbf1X2KUX-0Kt8-0iPnb6ylYIJkIuWFhTj0CROWcuFHA_1p46e__JSG9iX0iqcHCDJUxr9B5ot-0mLBnuyaX_8MTeNymzkOmshaVbY.jpg?r=e36" alt="">
+                </div>
+                <div id="third" class="content" onclick="play('dbtG_OfKiIs?si=SEjcS4LdkZS-LiRO')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABWfYbu6-fjU6mKuA4gdr6UyfXGl_As1dBr_B0bQnFWCo70E2eRb4-hzbhSfwmtSBhmGDKuUfdVXLhI5JryV2OTV3w37S0bgxhIO405SQi99k8d8DABit7D4jGGgWjrxcs1PV.jpg?r=298" alt="">
+                </div>
+                <div id="fourth" class="content" onclick="play('-l2VT_5waTo?si=cl_zhpu7LnYqLPtc')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABQc4EriV62woZJw8orOt6ZHyat-_BZSnLJAejzCr8mIN49q2zaGAalUQ4kWBfpMdBZHiUMhNUsuni6J6y8kWBNOZN-hujuF2_s6iDlKKkbOI27-tG198iCMu5f6mXG_-VBP6.jpg?r=31e" alt="">
+                </div>
+                <div id="fifth" class="content" onclick="play('qxeZN0rZP34?si=MsHjfArFKHjkVq3v')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABVIiX2eRlolp0jW3ySpLHqJlpP7DMb3ennjCbMESpE9AbusdNBFVuo751lhDAak-_Ru9Fp5PlTIC1CJJPRWAHZp5sjB_hFs5L_jxdSi_XhlFOkb3RbqqXP4prUtVd9a_7WAB.jpg?r=763" alt="">
+                </div>
+                <div id="sixth" class="content" onclick="play('lGcJL6TG5cA?si=r0GRCzwyrZFBHgDs')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABR3gw4ziZpEnJPly6lqoh7BtMBEQ0ehCXQlQXnMBL8ffyGtjiJPNyNIJ51bwlIdHfSzzCiRbS-di0j7I56jww1IPkdr0P-i_HDZOCQEOI-1q8ZcwcijwfHlUsNwvOuduv3hI.jpg?r=34d" alt="">
+                </div>
+                <div id="seventh" class="content" onclick="play('l5OAxkuq850?si=VazOVLASRNq7WqAm')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABc3ZUPL2cxo93rMRTGFd2EH9P7QK0OhAm-7MXfhKpj4dG8qxR0wMfVGsi7ExL9KwrJ1DT-u4HqruNKeJVCvSXrzT5GCIASX9wMRTRHOFS7yS2qDp4dpHNFQZGee5IDmP7X3m.jpg?r=ea5" alt="">
+                </div>
+                <div id="eigth" class="content" onclick="play('vIZWLvcMS9c?si=kY_mPeeKHGpmXPZg')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbntkyqgdLZn6zn-N7x0rczLdvtV43nwbLvpf_QPEcudxnWcCnZcd8eR8gyjMApj_AoRyiUNJxZBT6D-ulZyTJt2JVyet7DzCUNnfLPAsmvq02R4lp_Ab4SIqPcMV4FzY7OW.jpg?r=32f" alt="">
+                </div>
+                <div id="nineth" class="content" onclick="play('GBHVdStpagY?si=hxxEz43HrgCqaT23')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABV41eGAQgtteuWQPVMoxwJ_mHHFDvAaEAc5Ym5-9yjuJLqE-M5uVmXAyW4HoUwLiaEjK4Cgwl4-KhzpcTg4NYmHyiWxanQf7dOA4xzu7Ykk7eL6HfdxkZqilGXbNXPzTK8Pe.jpg?r=957" alt="">
+                </div>
+                <div id="tenth" class="content" onclick="play('Ruyl8_PT_y8?si=uJnjBrWFsFiezMLa')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZaYmsIIjciQBv6JD4fm8bgBceeaRdypM_z-T3SYRGklwnSMKMZGuFXVL-kQGNs9VdXYKic3fcDAZTYNkHSeemlnn5J_EzeeDoCG-dsNectTV6XrYbG0ef1gcokVFalDyZAx.jpg?r=a07" alt="">
+                </div>
+                <div id="eleventh" class="content" onclick="play('q3HEQsu_s3M?si=-dBXX0nh1PE3HY4-')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVv--pseh2lbfZKdQbMkS4SmCqsIlZ0UWRJIBwvB4QIQszoCMXfaJD-OlJRW5El7tYHD58c78yFCk7Zm1Xi5wessiDKXm-wDDJw.webp?r=2f0" alt="">
+                </div>
+                <div id="twelth" class="content" onclick="play('Ab_rXrgk5R4?si=63b8DAKxJNMdwOgb')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYmScMlW0_W81IJId53XAhcvcmlsKcqnxLor1nf4nAdtIlZCzrRjgS0M0nbyFBclmLx3kUGHVIY-7Gu6qKBVeb88xp4ZY_WnqcPKyPueSLFOeeC3kI9SCW5JRV1Shzmg4GzH.jpg?r=b42" alt="">
+                </div>
+                <div id="r-bttn" onclick="rightfun('content')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div id="sec" style="background-color: rgb(0, 0, 0); height: 198%; width: 100%;">
+        <div id="T-10-Movies">
+            <div id="m-text">
+                <p style="color: rgb(255, 255, 255); font-size: 22px; font-weight: 550; transform: scaleY(1.05); margin-left: 55px;">Top 10 Movies in India Today</p>
+            </div>
+            <div id="movies">
+                <div id="ls-bttn" onclick="leftfun('movies')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                </div>
+                <div id="first" class="movies" onclick="play('Zd69FfhBmSc?si=kxV4XfYtJaVp2sZW')">
+                    <svg id="rank-1" width="130px"height="170px" viewBox="-20 0 70 154" class="svg-icon svg-icon-rank-1 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABVY2m0m8fU0RS5PmijXVlT59BLal3hdZ8v6e4TRFhEsooOc04Bi_CnzXYWta76PK4oeZL5LW20lPjhk5aAJSHx1EqReB8HLdLfmjinxQ0_yxLldbuBmt1NV131K6AUvIs82-Yt9VlxJlzXaG88Y4gMpYjeuJR0sjREngsC-rfUXidLpLQr0XvNKLWypangskBY7OAYyLrBTXmTo7vOU4SK6PQyMucXD-LjqVJvEY1HoP_LR3t6Jy-fb3LewWkJcORSWPs2Cn3rFEcHERvIKUl2GfBFwDqQ.webp?r=ec8" alt="">
+                </div>
+                <div id="sec" class="movies" onclick="play('hWE6B3g6d5c?si=ZJ9JCFX9zTdse7t2')">
+                    <svg id="rank-2" width="130px" height="170px" viewBox="0 0 80 154" class="svg-icon svg-icon-rank-2 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.72 152H113v-30.174H50.484l4.355-3.55 29.453-24.012c5.088-4.124 9.748-8.459 13.983-13.004 4.16-4.464 7.481-9.339 9.972-14.629 2.449-5.203 3.678-11.113 3.678-17.749 0-9.428-2.294-17.627-6.875-24.645-4.597-7.042-10.941-12.494-19.07-16.376C77.803 3.957 68.496 2 58.036 2 47.591 2 38.37 4.023 30.347 8.06c-8.015 4.032-14.457 9.578-19.352 16.654-4.492 6.493-7.389 13.803-8.693 21.952h34.055c1.236-3.52 3.398-6.52 6.459-8.97 3.54-2.834 8.277-4.224 14.147-4.224 5.93 0 10.552 1.537 13.76 4.681 3.181 3.12 4.791 7.024 4.791 11.594 0 4.151-1.16 7.934-3.468 11.298-2.192 3.194-5.987 7.124-11.405 11.84L3.72 122.465V152z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABfZiZCI1eCwaJvWjCxLXkBL49wTQhZZ1Y3StODfDnxjdeUlLpl2KWblYcywzSY5qShMSrqvRWOQY4Rr05lLQ7WOZHS5aSpnOz9Bw9kzVSfjYYvDBQ9E1nwThASu7sfmD3-ZwwtNfsDXGrv_mG3XoIN270lS_eUjrv4wL0rz2s4IwgFEBIgenLSDWXnSFL1C5TsAJDIwl8DT4EdpJ1D_BsnFgGPKte9jbrBZoAUOA6zU5EH8NTXyOEYwVOXnf9einASBoXeewUbPBsYBsv6tyeV6W2oOJhUhQr-HxzAK-lyeZMrvM_hzTXA27rg.jpg?r=a92" alt="">
+                </div>
+                <div id="third" class="movies" onclick="play('8FkLRUJj-o0?si=qocv1jPgvZLH-IRz')">
+                    <svg id="rank-3" width="130px" height="170px" viewBox="0 0 80 154" class="svg-icon svg-icon-rank-3 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.809 41.577h33.243c1.3-2.702 3.545-4.947 6.674-6.72 3.554-2.015 7.83-3.01 12.798-3.01 5.555 0 10.14 1.11 13.723 3.376 3.839 2.427 5.782 6.283 5.782 11.315 0 4.553-1.853 8.395-5.473 11.38-3.547 2.926-8.18 4.37-13.821 4.37H41.44v28.366h16.77c5.572 0 10.275 1.227 14.068 3.711 4.02 2.633 6.071 6.581 6.071 11.616 0 5.705-1.943 9.975-5.853 12.562-3.658 2.42-8.292 3.61-13.863 3.61-5.205 0-9.82-.94-13.827-2.836-3.698-1.75-6.32-4.272-7.785-7.529H2.33c2.096 12.089 7.761 21.65 17.028 28.78C29.242 148.175 42.594 152 59.476 152c10.706 0 20.175-1.783 28.42-5.337 8.185-3.528 14.575-8.486 19.208-14.884 4.595-6.346 6.896-13.938 6.896-22.837 0-6.952-1.93-13.494-5.81-19.666-3.815-6.07-9.68-10.367-17.683-12.908l-5.46-1.735 5.353-2.04c6.659-2.538 11.667-6.338 15.083-11.412 3.431-5.096 5.142-10.806 5.142-17.181 0-8.471-2.262-15.778-6.787-21.985-4.574-6.275-10.7-11.17-18.408-14.696C77.683 3.775 69.109 2 59.687 2 44.084 2 31.515 5.816 21.91 13.415c-9 7.119-15.025 16.486-18.101 28.162z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABRpRrB4XbN--rHMfYznmMu8RS91earwNUKJ6mBHh2QBciUdfTNvBFG6F19T2CqbvFC5Q_WhkMSbFfPorZAVFjzOtYy5feGGevZwyg2K3BtbQJNH4LN7vTxNjmHDrzDaVYigNh1wLD1OxytCqaQs4zB9cO-hlvCk80AQCGgUzqAHaojeJTsErx7weViJYd7zxkR9vhU3CkrL3GqvlpnET0cCjC0DaJ82Aqoz7RTv9pvD8P1Jt-3yZBG7Zm6UAX-JE1yM5Bgr327C2ICmpwYx7E92VujeFNg.webp?r=49d" alt="">
+                </div>
+                <div id="fourth" class="movies" onclick="play('q8M6Ybjr2Wc?si=7zyU-BDKIlnYoZ8h')">
+                    <svg id="rank-4" width="130px" height="170px" viewBox="0 0 81 154" class="svg-icon svg-icon-rank-4 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M72 152h35.333v-30.977H128V92.497h-20.667V2H69.89L2 92.712v28.311h70V152zM36.202 92.188l35.93-47.998v47.998h-35.93z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABSLnFAeQIb21EIIswNvzLLe__mHSOpi3473mdDVLNViyeLzY99pMzhIHDYS2mcom1LAg3C-o3LXHAIWSePgswY6kmAivHMerM6OeRoxopsmE5BMAk7OYYm-QT3c4aY9NFJk2oGyIGItWf_0fDXY2Gko3G4iSXm5ty4gIii1Jy58kzJrUOHBwFJp1EnHyAeJum6C_SBVzwuyV9OJgXLcj2aX2pxPqk2HeEiBz2pIjl-CjXonipUB0oMTUVLp15TkVScVAH4HtNw_jRLyi3mPsOoc_ja_7ow.webp?r=f03" alt="">
+                </div>
+                <div id="fifth" class="movies" onclick="play('fjmthQ0AZnI?si=sSuqAOhF-1jbhlCn')">
+                    <svg id="rank-5" width="130px" height="170px" viewBox="0 0 81 154" class="svg-icon svg-icon-rank-5 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M105.588 32.174V2H13.534l-8.3 88.357h32.463c2.145-2.362 4.866-4.254 8.143-5.675 3.585-1.554 7.543-2.328 11.859-2.328 6.247 0 11.418 1.745 15.418 5.255 4.061 3.564 6.104 8.37 6.104 14.265 0 6.041-2.044 10.89-6.121 14.387-3.999 3.43-9.162 5.132-15.401 5.132-4.299 0-8.17-.694-11.601-2.095-3.11-1.268-5.577-2.946-7.368-5.042H2.592c3.308 11.593 9.782 20.623 19.46 27.164C32.472 148.464 45.64 152 61.602 152c10.12 0 19.294-1.99 27.548-5.966 8.198-3.949 14.711-9.718 19.572-17.335 4.844-7.59 7.278-16.95 7.278-28.123 0-9.182-2.013-17.314-6.032-24.431-4.02-7.118-9.514-12.7-16.51-16.775-6.99-4.072-14.849-6.109-23.612-6.109-11.06 0-20.099 3.483-27.234 10.461l-3.892 3.806 3.273-35.354h63.595z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABUYKrZYSd-K-TPXDc5estwT9DyOTdAhI8NIgIxo4MjG9eLCmAtzEIQTKaJ1ZPkdcFG96Wl5jt16B4vjxES8g4yIBhwQsf-Lvjc1Paih6V7BQWOguj24Kl5oaZJE6IsAhxbh6Z8kQhbzwHWS4O-Tng1PU_x9T8pQw7NV9UXcxpmmZRxpxDPT-0I2jfo3jGewTqBu0LShmKPFd6_lSRwARw5Jv47QHmKpgQMkQ7gj9JUxAf8YnGPdDRadvT9TFohUrDIw_d8Gy1N7Qp74NITK4cKr0_PvZ0NuTSwNPCVcxoTSIxEUu42IDAQ1W-w.jpg?r=7ab" alt="">
+                </div>
+                <div id="sixth" class="movies" onclick="play('q8M6Ybjr2Wc?si=7zyU-BDKIlnYoZ8h')">
+                    <svg id="rank-6" width="130px" height="170px" viewBox="0 0 81 154" class="svg-icon svg-icon-rank-6 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M79.482 38.192h35.551c-3.284-10.945-8.963-19.573-17.048-25.938C89.323 5.434 77.531 2 62.545 2 50.756 2 40.35 4.86 31.277 10.577c-9.064 5.712-16.198 14.09-21.412 25.178C4.63 46.893 2 60.425 2 76.365c0 14.416 2.356 27.344 7.059 38.798 4.667 11.368 11.573 20.34 20.734 26.956C38.904 148.7 50.225 152 63.816 152a61.513 61.513 0 0019.922-3.278 53.546 53.546 0 0017.378-9.792c5.154-4.33 9.255-9.64 12.314-15.947 3.042-6.273 4.57-13.556 4.57-21.868 0-8.812-2.062-16.636-6.182-23.51-4.134-6.897-9.643-12.293-16.55-16.212-6.905-3.917-14.48-5.874-22.76-5.874-14.546 0-25.34 4.55-32.569 13.63l-4.003 5.03.443-6.413c.874-12.636 3.56-21.85 8.168-27.654 4.69-5.907 10.885-8.9 18.421-8.9 4.26 0 7.826.734 10.685 2.24 2.445 1.287 4.396 2.867 5.829 4.74zM62.605 123c-5.825 0-10.902-1.894-15.136-5.655C43.173 113.528 41 108.603 41 102.71c0-5.881 2.164-10.864 6.44-14.818C51.674 83.975 56.762 82 62.604 82c5.847 0 10.906 1.98 15.074 5.905C81.878 91.859 84 96.837 84 102.71c0 5.885-2.131 10.805-6.35 14.622-4.167 3.77-9.214 5.668-15.045 5.668z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABdX6mzB4pQbvERTE721Y4ouR467xzk-LPMhvmSNUIcNfxtsJa0ol-mJ4ZEn6edzr-e_LUIlnaowXzhureVYsve7nLgqWE3cf_L3J5iHRLxn1foZETu-NCUt8HUEUpHhAOIu0eIm0cyrlvFM33SS0OhkgsWpLWggLQaO6OuL3WTIbs-c8Le5-1ASGorrhmlBsoz6xKqhtNlPJRvu52_v6L1V5TlbFgOYa-zDJ4CyQ2gKSelrh21aOyFdjHMX3QvCQd_JO0xV3CJXFExtbbPnSvIDQS7iynA.webp?r=bad" alt="">
+                </div>
+                <div id="seventh" class="movies" onclick="play('ncGvvocG6XU?si=tzK0sqdCj6puSoA4')">
+                    <svg id="rank-7" viewBox="0 0 78 154" width="130px" height="170px" class="svg-icon svg-icon-rank-7 top-10-rank"><path stroke="#595959" stroke-width="4" d="M113,2 L2,2 L2,33.4022989 L75.9665929,33.4022989 L21.22571,152 L60.28102,152 L113,32.7672283 L113,2 Z" stroke-linejoin="square"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABd4dWCHHgFYWrIvrm4FWcJtPqhoKthnmFMsEkZluVthJUG14ruHxPZWabzpc2P0xxA6w4JP3QGBAL5-yqmnIty97lT9AdQ4Z2SyVHNf5WRL3m6sPgz4RcuBEMafQii3bZ56uvZJff10aGll_Ft2EpwxywoB4dUWnbvXNSRBTFyDZ1lteVxbN-mp-nmO1DCFkqN9F4gEAr7P6-9dRtI5ux8TgNGDWP8oJb-GLpoNfb7udNc1VptO3SkALbOzB23LYRAK5HWJegulWT9dPnS95GrLFLZxBwA.webp?r=c8c" alt="">
+                </div>
+                <div id="eighth" class="movies" onclick="play('BKP_0z52ZAw?si=lTzqnTvfxoM9wRFf')">
+                    <svg id="rank-8" width="130px" height="170px" viewBox="0 0 77 154" class="svg-icon svg-icon-rank-8 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M59.5 152c11.335 0 21.358-1.72 30.077-5.15 8.637-3.397 15.361-8.258 20.213-14.586 4.805-6.267 7.21-13.876 7.21-22.899 0-7.326-2.261-14.07-6.813-20.29-4.548-6.214-10.837-10.658-18.922-13.35l-5.4-1.799 5.338-1.975c7.238-2.678 12.572-6.683 16.066-12.018 3.53-5.388 5.284-11.178 5.284-17.414 0-7.912-2.133-14.839-6.405-20.84-4.3-6.042-10.403-10.825-18.345-14.351C79.816 3.78 70.386 2 59.5 2S39.184 3.781 31.197 7.328c-7.942 3.526-14.044 8.309-18.345 14.351-4.272 6.001-6.405 12.928-6.405 20.84 0 6.236 1.755 12.026 5.284 17.414 3.494 5.335 8.828 9.34 16.066 12.018l5.338 1.975-5.4 1.798c-8.085 2.693-14.374 7.137-18.922 13.351C4.261 95.295 2 102.04 2 109.365c0 9.023 2.405 16.632 7.21 22.899 4.852 6.328 11.576 11.19 20.213 14.586 8.72 3.43 18.742 5.15 30.077 5.15zm.5-89c-5.6 0-10.334-1.515-14.125-4.56C41.985 55.313 40 51.183 40 46.21c0-5.244 1.976-9.518 5.875-12.65C49.666 30.515 54.4 29 60 29s10.334 1.515 14.125 4.56C78.025 36.694 80 40.968 80 46.212c0 4.973-1.985 9.103-5.875 12.228C70.334 61.485 65.6 63 60 63zm-.5 62c-6.255 0-11.556-1.613-15.836-4.856-4.41-3.343-6.664-7.816-6.664-13.25 0-5.298 2.258-9.698 6.664-13.038C47.944 90.613 53.245 89 59.5 89c6.255 0 11.556 1.613 15.836 4.856 4.406 3.34 6.664 7.74 6.664 13.038 0 5.434-2.254 9.907-6.664 13.25C71.056 123.387 65.755 125 59.5 125z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABbgXphFKVUrNWCQEB7YR5YkYG7PD_vuI3aTeD3AobHcRf0Po2iDODSj-y0J33CGX9XULgeg7SLgY0FwHpyCfcSkwm2TZi6NifGjVSP1XnsVd_qCvTWtKvLhzslmbypWZhEc1d3gj7dqbZfNMAC5X2rS0Awyv15YQa9OR50YGGuv-9BvCpYqDlaQr31rTIM3j9kRcga0ukjb6OsjLYl9vnELVK-_sva8DkPhL9g1KqMeDk-wFp3cR09ny2rCuEa9fWYvJ_M-fZfEc0F7yo1pAfCWqkOSglA.webp?r=3e5" alt="">
+                </div>
+                <div id="nineth" class="movies" onclick="play('oVAmbINMIgQ?si=v0ZULnDnAqy85m_Z')">
+                    <svg id="rank-9" viewBox="0 0 71 154" width="130px" height="170px" class="svg-icon svg-icon-rank-9 top-10-rank"><path stroke="#595959" stroke-width="4" d="M40.0597376,115.807692 L4.47328474,115.807692 C7.45109332,126.586242 13.4362856,135.15497 22.4670906,141.582071 C32.2129251,148.518048 44.5640134,152 59.5759717,152 C78.2141671,152 92.5105725,145.697944 102.6454,133.074799 C112.853557,120.360322 118,101.543854 118,76.5769231 C118,62.1603327 115.678843,49.3016297 111.046669,37.9886125 C106.453069,26.7698049 99.6241767,17.9802976 90.5435117,11.5767831 C81.5017862,5.20072813 70.1375399,2 56.3957597,2 C49.4158116,2 42.68229,3.15952329 36.1849549,5.47966815 C29.7045526,7.79376647 23.8782903,11.1932931 18.6948526,15.6846002 C13.5316746,20.1583529 9.45923583,25.508367 6.46782377,31.7491046 C3.4928156,37.95562 2,45.0644366 2,53.0961538 C2,61.9117395 4.02797967,69.7019439 8.0788911,76.5056791 C12.1434539,83.3323424 17.5832537,88.6925139 24.4218542,92.6108203 C31.2518358,96.5241882 38.8590885,98.4807692 47.2791519,98.4807692 C55.0853554,98.4807692 61.6095996,97.3619306 66.8547126,95.1478231 C72.0569983,92.9517941 76.4513169,89.5970183 80.0605818,85.0622151 L84.0584687,80.039134 L83.6207883,86.4440446 C82.74746,99.2241219 80.0984349,108.438199 75.5533003,114.10687 C70.9310132,119.871766 64.7726909,122.788462 57.2438163,122.788462 C52.8691399,122.788462 49.1904302,122.100251 46.212535,120.692834 C43.5930338,119.454801 41.5307848,117.825945 40.0597376,115.807692 Z M57.5,31 C63.3657106,31 68.4419893,32.9364861 72.6299874,36.7826253 C76.8609583,40.6682294 79,45.6186068 79,51.5 C79,57.3813932 76.8609583,62.3317706 72.6299874,66.2173747 C68.4419893,70.0635139 63.3657106,72 57.5,72 C51.6342894,72 46.5580107,70.0635139 42.3700126,66.2173747 C38.1390417,62.3317706 36,57.3813932 36,51.5 C36,45.6186068 38.1390417,40.6682294 42.3700126,36.7826253 C46.5580107,32.9364861 51.6342894,31 57.5,31 Z" stroke-linejoin="square"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABTpOwd2ZfN8iaZiCd0SzQ2EjCI7To0gd9_zPfbDxkc1RnxHVh15YwDo0lS2Rl9Oq8W0XqTTUHfaZtUhIGahGyqCqyZpuwWiqHuSj5hKGuPelkL63ag875Zl9Q9UhG1OxAPgL_XqQmcuCV4WWKM9dk0he5uMTHN20RkEMc_Q8NZb2R4aum0D560rX0kHq1soFjRuWppZreQJHHGBIzL81VYdZ_mMYsDdV5ny3bOfddtuOGuIc3xGBCc03UDR8qQfXvZzWz2yNfuLfe0o_JYdmUbXimNxOzGxOvPL0OorS74yIaetg5q6TA1b60w.jpg?r=fc5" alt="">
+                </div>
+                <div id="tenth" class="movies" onclick="play('Wu5McAh9s9E?si=yzCru1niu2FyKmxY')">
+                    <svg id="rank-10" width="130px" height="170px" viewBox="0 0 140 154" class="svg-icon svg-icon-rank-10 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M34.757 151.55h35.869V2.976L2 19.687v30.14l32.757-8.41v110.132zm105.53 3.45c12.394 0 23.097-3.12 32.163-9.353 9.093-6.25 16.11-15.047 21.066-26.43C198.5 107.766 201 94.196 201 78.5c0-15.698-2.5-29.266-7.484-40.716-4.955-11.384-11.973-20.18-21.066-26.431C163.384 5.119 152.681 2 140.287 2c-12.393 0-23.096 3.12-32.162 9.353-9.093 6.25-16.11 15.047-21.066 26.43-4.984 11.45-7.484 25.02-7.484 40.717 0 15.698 2.5 29.266 7.484 40.716 4.955 11.384 11.973 20.18 21.066 26.431 9.066 6.234 19.769 9.353 32.162 9.353zm0-31.368c-7.827 0-13.942-4.147-18.15-12.178-4.053-7.736-6.047-18.713-6.047-32.954s1.994-25.218 6.047-32.954c4.208-8.03 10.323-12.178 18.15-12.178 7.827 0 13.943 4.147 18.15 12.178 4.053 7.736 6.048 18.713 6.048 32.954s-1.995 25.218-6.047 32.954c-4.208 8.03-10.324 12.178-18.15 12.178z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABerLlQH_OYbBwAo9TEBs7de0izs6I56ysiG1sgcsws8GRFrAivKGSrkH_ua-9EBZvUF68-GB9J9e9sStl2niPg9OgbXinvGdhXencj2cW9Rvm3HSrU_p7d-wfJrUPqtyS3WWuJV82bc_ph-A71uIPE71yI4_NLHPt_hDVxzDrBLCkTmtGQfleGxGDfg4Ru5Tx89JzRcoolI2kIPgU7Chj5pEhFlxvInUmMDypoVa3Vq7hR7MecNlcnolvkZbu0RE08IPI-7oSCaSl-fuOmlG2oToCnitFLx45Bs2cr7pwQxNUAAHFeW9gsJ2Pw.jpg?r=4c5" alt="">
+                </div>
+                <div id="rs-bttn" onclick="rightfun('movies')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <div id="T-10-Shows">
+            <div id="s-text">
+                <p style="color: rgb(255, 255, 255); font-size: 22px; font-weight: 550; transform: scaleY(1.05); margin-left: 55px;">Top 10 TV Shows in India Today</p>
+            </div>
+            <div id="shows">
+                <div id="ls-bttn" onclick="leftfun('shows')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                </div>
+                <div id="first" class="shows" onclick="play('NqeaCngRj5I?si=8kxHfFEG3mNkYuUL&autoplay=1')">
+                    <svg id="rank-1" width="130px"height="170px" viewBox="-20 0 70 154" class="svg-icon svg-icon-rank-1 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABdQ5s-_FSMPeLFH0CGiazFLES3Dy0LF9sRK5s6ZlDRmIA_p3YAbUI8BFSssXUwkQVMDAX3w8xLpxrDJAKZ8-cj0JeQrOqZys_cALQW_S9Rqy08yJEqTmZM9lqhgZ5PGu0gepNNkVH9JPoPUfqthwUFeY7KOauAJoDpZM1loPVmG8KA245jqHF_5ujN6JnAQib_uq1hqbDVWr5f3UspNjKS5j3dbAboxoQ34f81xuL_cHHqGsp-a5Qop-ss7C1-J45ZrYt1a8vMjX-rqnpiMPd0Eqp2Fr3Jq6vFutWXTcokalfNNITHFGm-lLwQ.jpg?r=f72" alt="">
+                </div>
+                <div id="sec" class="shows" onclick="play('RHzDP5S5IMg?si=lbdzihvg2ASxOeKQ')">
+                    <svg id="rank-2" width="130px" height="170px" viewBox="0 0 80 154" class="svg-icon svg-icon-rank-2 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.72 152H113v-30.174H50.484l4.355-3.55 29.453-24.012c5.088-4.124 9.748-8.459 13.983-13.004 4.16-4.464 7.481-9.339 9.972-14.629 2.449-5.203 3.678-11.113 3.678-17.749 0-9.428-2.294-17.627-6.875-24.645-4.597-7.042-10.941-12.494-19.07-16.376C77.803 3.957 68.496 2 58.036 2 47.591 2 38.37 4.023 30.347 8.06c-8.015 4.032-14.457 9.578-19.352 16.654-4.492 6.493-7.389 13.803-8.693 21.952h34.055c1.236-3.52 3.398-6.52 6.459-8.97 3.54-2.834 8.277-4.224 14.147-4.224 5.93 0 10.552 1.537 13.76 4.681 3.181 3.12 4.791 7.024 4.791 11.594 0 4.151-1.16 7.934-3.468 11.298-2.192 3.194-5.987 7.124-11.405 11.84L3.72 122.465V152z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABTHaYyxhIHpoH9PRw3bdzR1zJmGTywScA8iqiLERz5O-tMaldzLDomA1UMHZzgGHJcQ0meyFBBeHx9VVWQ1Ts-NxqHAyqx7TCVpNO9g159HYxZk5LgMsKida4XYmOqZQmU3g2Y1LAUV5KUCwehZPRMkIfi2ZmImOay90f1eUr4bFmh6fTCBTXHdYAr0BXAtKLGgo3afkALSIHOsmqyJmFyqMFKISg-rjV6alIukg_7nszOvfB7gw7idAlpnGto1qHoilH2vr37rLbb6LKacF9FVpWE7W6A8wQ6xhMVOdAtS5Qp9AnCQ6.jpg?r=f30" alt="">
+                </div>
+                <div id="third" class="shows" onclick="play('zgfy3i8jLYk?si=yAzOXxrmNtXSjCaZ')">
+                    <svg id="rank-3" width="130px" height="170px" viewBox="0 0 80 154" class="svg-icon svg-icon-rank-3 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.809 41.577h33.243c1.3-2.702 3.545-4.947 6.674-6.72 3.554-2.015 7.83-3.01 12.798-3.01 5.555 0 10.14 1.11 13.723 3.376 3.839 2.427 5.782 6.283 5.782 11.315 0 4.553-1.853 8.395-5.473 11.38-3.547 2.926-8.18 4.37-13.821 4.37H41.44v28.366h16.77c5.572 0 10.275 1.227 14.068 3.711 4.02 2.633 6.071 6.581 6.071 11.616 0 5.705-1.943 9.975-5.853 12.562-3.658 2.42-8.292 3.61-13.863 3.61-5.205 0-9.82-.94-13.827-2.836-3.698-1.75-6.32-4.272-7.785-7.529H2.33c2.096 12.089 7.761 21.65 17.028 28.78C29.242 148.175 42.594 152 59.476 152c10.706 0 20.175-1.783 28.42-5.337 8.185-3.528 14.575-8.486 19.208-14.884 4.595-6.346 6.896-13.938 6.896-22.837 0-6.952-1.93-13.494-5.81-19.666-3.815-6.07-9.68-10.367-17.683-12.908l-5.46-1.735 5.353-2.04c6.659-2.538 11.667-6.338 15.083-11.412 3.431-5.096 5.142-10.806 5.142-17.181 0-8.471-2.262-15.778-6.787-21.985-4.574-6.275-10.7-11.17-18.408-14.696C77.683 3.775 69.109 2 59.687 2 44.084 2 31.515 5.816 21.91 13.415c-9 7.119-15.025 16.486-18.101 28.162z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABTrkAFkh9IKeJsKESThcdX5Mk6zopF14-YVE2hRA6AE9Wi9SuedW3vmUUUcX9sK_VeWeik_KMWHkCQmDa6uDMUW4f8PVcqN6UxiXGCq-lcIF5DFyP5ITRIEFP47XoPiQs67BtSsEIEo25Wlkdqx1UyaAEzE9LKzjcaOG2aDLi1cO3sbumrhvG_YYcEfNLgqy5BGk3B17lPKZj3_1vRlzQfExu8aNIIm4H4BXxqrob4HzPpISSkP_TuGXP4d2Jyl1okKECfpAggPXBhX4Gs9MGxvU3Mg3Wh1z7hgIAF3GqFCOklMIb2SpNifv8w.jpg?r=427" alt="">
+                </div>
+                <div id="fourth" class="shows" onclick="play('iD3TZ_Xxc14?si=GI4V9hxRuOS64QN7')">
+                    <svg id="rank-4" width="130px" height="170px" viewBox="0 0 81 154" class="svg-icon svg-icon-rank-4 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M72 152h35.333v-30.977H128V92.497h-20.667V2H69.89L2 92.712v28.311h70V152zM36.202 92.188l35.93-47.998v47.998h-35.93z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABe5ufQQpSBHHnRpzC8LWxMXwhqiRvD_OUgO4WKvz0QL3L52hhcoc2Ul9g-99laZZQMrLBGSUmdz0VKm26UT0nZaiPR-4RGGLf5_Y7vovT9E3H52kySnc_pJTsa_KwHUNE7vBAA.jpg?r=002" alt="">
+                </div>
+                <div id="fifth" class="shows" onclick="play('oGyWHLCf4NQ?si=dyVQBKAlWYsQJs62')">
+                    <svg id="rank-5" width="130px" height="170px" viewBox="0 0 81 154" class="svg-icon svg-icon-rank-5 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M105.588 32.174V2H13.534l-8.3 88.357h32.463c2.145-2.362 4.866-4.254 8.143-5.675 3.585-1.554 7.543-2.328 11.859-2.328 6.247 0 11.418 1.745 15.418 5.255 4.061 3.564 6.104 8.37 6.104 14.265 0 6.041-2.044 10.89-6.121 14.387-3.999 3.43-9.162 5.132-15.401 5.132-4.299 0-8.17-.694-11.601-2.095-3.11-1.268-5.577-2.946-7.368-5.042H2.592c3.308 11.593 9.782 20.623 19.46 27.164C32.472 148.464 45.64 152 61.602 152c10.12 0 19.294-1.99 27.548-5.966 8.198-3.949 14.711-9.718 19.572-17.335 4.844-7.59 7.278-16.95 7.278-28.123 0-9.182-2.013-17.314-6.032-24.431-4.02-7.118-9.514-12.7-16.51-16.775-6.99-4.072-14.849-6.109-23.612-6.109-11.06 0-20.099 3.483-27.234 10.461l-3.892 3.806 3.273-35.354h63.595z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABbcTpIb42SuObYmiuUJOZ303ybRsH3WR5c7dMzMIyPoXHXkbr8RMPXp4uIIf5E2K4p6tJYgbn9f4SQu6n4gCvc2ICcLrG2HDZrHEffSaLZFastGqISUMEvNndd79W94Bs-uotXtyEJw9FYv0ZZuXvmancdXA_i45zFwB1CzILQccioD9Z_cQu-sc17HzK3nYOvMpYpdrwFwzQyWfuBqU2pEctTyphOAqU_g0huW_FJOCY59TUH0CjezZCVcJ5M1EAWB29BpAUbEE_6WIX5SIsOtOJrRVvDqmrrXfbyHQzdz_Ljt-hWuSI9o6H23PLNhDPcFWRh8btG_i32rH3gs8yS68gr5M292LqrgLFuh5xKJQzE8Ogh7vJ2clp3IEkJEI4N5pM57UsaVjEhI9YasD3SuNxfBoTaTgwtszqzIDTwZmtGXXW9JecA8wuu5xYNLK2f7jrmUJPw.jpg?r=992" alt="">
+                </div>
+                <div id="sixth" class="shows" onclick="play('x0KjktaMRQ8?si=TQJ73oo_GRG7vEe3')">
+                    <svg id="rank-6" width="130px" height="170px" viewBox="0 0 81 154" class="svg-icon svg-icon-rank-6 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M79.482 38.192h35.551c-3.284-10.945-8.963-19.573-17.048-25.938C89.323 5.434 77.531 2 62.545 2 50.756 2 40.35 4.86 31.277 10.577c-9.064 5.712-16.198 14.09-21.412 25.178C4.63 46.893 2 60.425 2 76.365c0 14.416 2.356 27.344 7.059 38.798 4.667 11.368 11.573 20.34 20.734 26.956C38.904 148.7 50.225 152 63.816 152a61.513 61.513 0 0019.922-3.278 53.546 53.546 0 0017.378-9.792c5.154-4.33 9.255-9.64 12.314-15.947 3.042-6.273 4.57-13.556 4.57-21.868 0-8.812-2.062-16.636-6.182-23.51-4.134-6.897-9.643-12.293-16.55-16.212-6.905-3.917-14.48-5.874-22.76-5.874-14.546 0-25.34 4.55-32.569 13.63l-4.003 5.03.443-6.413c.874-12.636 3.56-21.85 8.168-27.654 4.69-5.907 10.885-8.9 18.421-8.9 4.26 0 7.826.734 10.685 2.24 2.445 1.287 4.396 2.867 5.829 4.74zM62.605 123c-5.825 0-10.902-1.894-15.136-5.655C43.173 113.528 41 108.603 41 102.71c0-5.881 2.164-10.864 6.44-14.818C51.674 83.975 56.762 82 62.604 82c5.847 0 10.906 1.98 15.074 5.905C81.878 91.859 84 96.837 84 102.71c0 5.885-2.131 10.805-6.35 14.622-4.167 3.77-9.214 5.668-15.045 5.668z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABSg48KosKW5IgTIO1NyXzVs0OMxUtPB_Ydx5Shp3r0kI2C-oPq2iSNQfULLhDrIJOt0_p3b_bHOX9u8XwF4C4J4zGseqxpAGNGc-b1zyRHmZ72Q2k00q4pdkqStQBzLDqM8bP6szD0xTDFbQDaCRiB1rXVInc452kKVRkuOLxMVWj2JE0z3QL9pEkf58Wimwa38Niwt_BaYg8G6Ql0NdVEmG26m0ivEfYzbnPlMmioLsHb22AiuiASlnkpajxtbqEB9BUGX9L7bd5uQM4FvBlAWMzg8-kUi7RoN4jXfFHiuG7DH5BdGWU-Ucjg.jpg?r=40c" alt="">
+                </div>
+                <div id="seventh" class="movies" onclick="play('zgfy3i8jLYk?si=yAzOXxrmNtXSjCaZ')">
+                    <svg id="rank-7" viewBox="0 0 78 154" width="130px" height="170px" class="svg-icon svg-icon-rank-7 top-10-rank"><path stroke="#595959" stroke-width="4" d="M113,2 L2,2 L2,33.4022989 L75.9665929,33.4022989 L21.22571,152 L60.28102,152 L113,32.7672283 L113,2 Z" stroke-linejoin="square"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABTrkAFkh9IKeJsKESThcdX5Mk6zopF14-YVE2hRA6AE9Wi9SuedW3vmUUUcX9sK_VeWeik_KMWHkCQmDa6uDMUW4f8PVcqN6UxiXGCq-lcIF5DFyP5ITRIEFP47XoPiQs67BtSsEIEo25Wlkdqx1UyaAEzE9LKzjcaOG2aDLi1cO3sbumrhvG_YYcEfNLgqy5BGk3B17lPKZj3_1vRlzQfExu8aNIIm4H4BXxqrob4HzPpISSkP_TuGXP4d2Jyl1okKECfpAggPXBhX4Gs9MGxvU3Mg3Wh1z7hgIAF3GqFCOklMIb2SpNifv8w.jpg?r=427" alt="">
+                </div>
+                <div id="eighth" class="movies" onclick="play('ujv9dhXEigY?si=aAujGSg55wDcy6OD')">
+                    <svg id="rank-8" width="130px" height="170px" viewBox="0 0 77 154" class="svg-icon svg-icon-rank-8 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M59.5 152c11.335 0 21.358-1.72 30.077-5.15 8.637-3.397 15.361-8.258 20.213-14.586 4.805-6.267 7.21-13.876 7.21-22.899 0-7.326-2.261-14.07-6.813-20.29-4.548-6.214-10.837-10.658-18.922-13.35l-5.4-1.799 5.338-1.975c7.238-2.678 12.572-6.683 16.066-12.018 3.53-5.388 5.284-11.178 5.284-17.414 0-7.912-2.133-14.839-6.405-20.84-4.3-6.042-10.403-10.825-18.345-14.351C79.816 3.78 70.386 2 59.5 2S39.184 3.781 31.197 7.328c-7.942 3.526-14.044 8.309-18.345 14.351-4.272 6.001-6.405 12.928-6.405 20.84 0 6.236 1.755 12.026 5.284 17.414 3.494 5.335 8.828 9.34 16.066 12.018l5.338 1.975-5.4 1.798c-8.085 2.693-14.374 7.137-18.922 13.351C4.261 95.295 2 102.04 2 109.365c0 9.023 2.405 16.632 7.21 22.899 4.852 6.328 11.576 11.19 20.213 14.586 8.72 3.43 18.742 5.15 30.077 5.15zm.5-89c-5.6 0-10.334-1.515-14.125-4.56C41.985 55.313 40 51.183 40 46.21c0-5.244 1.976-9.518 5.875-12.65C49.666 30.515 54.4 29 60 29s10.334 1.515 14.125 4.56C78.025 36.694 80 40.968 80 46.212c0 4.973-1.985 9.103-5.875 12.228C70.334 61.485 65.6 63 60 63zm-.5 62c-6.255 0-11.556-1.613-15.836-4.856-4.41-3.343-6.664-7.816-6.664-13.25 0-5.298 2.258-9.698 6.664-13.038C47.944 90.613 53.245 89 59.5 89c6.255 0 11.556 1.613 15.836 4.856 4.406 3.34 6.664 7.74 6.664 13.038 0 5.434-2.254 9.907-6.664 13.25C71.056 123.387 65.755 125 59.5 125z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABQPpvNM-Cn1S58XNy0uwtbO05bV2z495J-dVlC7yyr4IEk75J7ObVp_DXZPztLtyz-ZrqRQCHpQx8F45Ct0_hVX3Ezl3Ibl3arQlFIAltvCeslfRzEkw7U6Czz2MqtuxhFGoDQ.jpg?r=9c3" alt="">
+                </div>
+                <div id="nineth" class="movies" onclick="play('CXGb57hvZbM?si=mS6QZ5diaCvoA_aq')">
+                    <svg id="rank-9" viewBox="0 0 71 154" width="130px" height="170px" class="svg-icon svg-icon-rank-9 top-10-rank"><path stroke="#595959" stroke-width="4" d="M40.0597376,115.807692 L4.47328474,115.807692 C7.45109332,126.586242 13.4362856,135.15497 22.4670906,141.582071 C32.2129251,148.518048 44.5640134,152 59.5759717,152 C78.2141671,152 92.5105725,145.697944 102.6454,133.074799 C112.853557,120.360322 118,101.543854 118,76.5769231 C118,62.1603327 115.678843,49.3016297 111.046669,37.9886125 C106.453069,26.7698049 99.6241767,17.9802976 90.5435117,11.5767831 C81.5017862,5.20072813 70.1375399,2 56.3957597,2 C49.4158116,2 42.68229,3.15952329 36.1849549,5.47966815 C29.7045526,7.79376647 23.8782903,11.1932931 18.6948526,15.6846002 C13.5316746,20.1583529 9.45923583,25.508367 6.46782377,31.7491046 C3.4928156,37.95562 2,45.0644366 2,53.0961538 C2,61.9117395 4.02797967,69.7019439 8.0788911,76.5056791 C12.1434539,83.3323424 17.5832537,88.6925139 24.4218542,92.6108203 C31.2518358,96.5241882 38.8590885,98.4807692 47.2791519,98.4807692 C55.0853554,98.4807692 61.6095996,97.3619306 66.8547126,95.1478231 C72.0569983,92.9517941 76.4513169,89.5970183 80.0605818,85.0622151 L84.0584687,80.039134 L83.6207883,86.4440446 C82.74746,99.2241219 80.0984349,108.438199 75.5533003,114.10687 C70.9310132,119.871766 64.7726909,122.788462 57.2438163,122.788462 C52.8691399,122.788462 49.1904302,122.100251 46.212535,120.692834 C43.5930338,119.454801 41.5307848,117.825945 40.0597376,115.807692 Z M57.5,31 C63.3657106,31 68.4419893,32.9364861 72.6299874,36.7826253 C76.8609583,40.6682294 79,45.6186068 79,51.5 C79,57.3813932 76.8609583,62.3317706 72.6299874,66.2173747 C68.4419893,70.0635139 63.3657106,72 57.5,72 C51.6342894,72 46.5580107,70.0635139 42.3700126,66.2173747 C38.1390417,62.3317706 36,57.3813932 36,51.5 C36,45.6186068 38.1390417,40.6682294 42.3700126,36.7826253 C46.5580107,32.9364861 51.6342894,31 57.5,31 Z" stroke-linejoin="square"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABfK3MyYKu5LAYhBfg0VuQL10GlHGzwLioBlh4C1A1nHhu9ZKfXB-8RHoV5-EkjV5zHFOj-v0PrWkAR7GybDnkGgg9t6e1HhQ5kDFOoQ2yQuI4CcNMjGY1JIliGyly7CeS6AEQwyp1PbEwUdsu7n5po-BUCTEzaRrl1OuKulp0dTk0akY4ifUiUA8LLItdYKKTUIjbskUtQRrsXSohv6JPpdTnIRl34_cHPhwG2sI2z8tIgHViOP-Ye4c5xW4OsZmCDBemC4LtvNjW8ee3JzGRUJLzQq31oVVVcXgi9oOLCjYM_ICVaXjzGKEyg.jpg?r=59a" alt="">
+                </div>
+                <div id="tenth" class="movies" onclick="play('WPlXILGpOFk?si=SjducW7tS44njbkh')">
+                    <svg id="rank-10" width="130px" height="170px" viewBox="0 0 140 154" class="svg-icon svg-icon-rank-10 top-10-rank"><path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M34.757 151.55h35.869V2.976L2 19.687v30.14l32.757-8.41v110.132zm105.53 3.45c12.394 0 23.097-3.12 32.163-9.353 9.093-6.25 16.11-15.047 21.066-26.43C198.5 107.766 201 94.196 201 78.5c0-15.698-2.5-29.266-7.484-40.716-4.955-11.384-11.973-20.18-21.066-26.431C163.384 5.119 152.681 2 140.287 2c-12.393 0-23.096 3.12-32.162 9.353-9.093 6.25-16.11 15.047-21.066 26.43-4.984 11.45-7.484 25.02-7.484 40.717 0 15.698 2.5 29.266 7.484 40.716 4.955 11.384 11.973 20.18 21.066 26.431 9.066 6.234 19.769 9.353 32.162 9.353zm0-31.368c-7.827 0-13.942-4.147-18.15-12.178-4.053-7.736-6.047-18.713-6.047-32.954s1.994-25.218 6.047-32.954c4.208-8.03 10.323-12.178 18.15-12.178 7.827 0 13.943 4.147 18.15 12.178 4.053 7.736 6.048 18.713 6.048 32.954s-1.995 25.218-6.047 32.954c-4.208 8.03-10.324 12.178-18.15 12.178z"></path></svg>
+                    <img width="130px" height="170px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABcqCiry-7q-uJuQyAddv5vd20ouKOBdWjfvaJrNkUgHzuEsfKZk9YP1QGWFagUMOYiDv2eTKh2H84sQaf8KMA1dUcMuxZcZdUI02s8zEQfnf-3G75rI2iTKtp5ZH3w_vhYFQkA.jpg?r=934" alt="">
+                </div>
+                <div id="rs-bttn" onclick="rightfun('shows')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <div id="Content">
+            <div id="o-text">
+                <p style="color: rgb(255, 255, 255); font-size: 22px; font-weight: 550; transform: scaleY(1.05); margin-left: 55px;">Only on Netflix</p>
+            </div>
+            <div id="content-1">
+                <div id="l-bttn" onclick="leftfun('content-1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                </div>
+                <div id="first" class="content" onclick="play('CXGb57hvZbM?si=MjyFyQ3lZJ6A6yiU')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABeyQSsawgRmc58nVxwkjycUh4UBbaZmZIvgCqBNNmxByhuUv9H9dGAFgBwizYgfV4kgTj2NPMDLxiWl43a25KBSWHNdzgPC7Z7fCH5iJNp17CdsO13sITM71ovpSkbhA5OZjZL0Ami9D91emWxg7-SXLXJDLkIrH8jGDNWNcmdzlSFyUuRvb0gY0761NBrxsAlusGvzfwrhqzphHsWYQ5ZA68gzJZ5s_QAO0-lM57W4_-8ieZcO1qL-K8DQN-dwawEbHbiXRTw4OecFRV3cYbhxfpJFJBu0q5r5ZackYAg1d-QR7Ulxq_UpyGIoOvlLa-ksbQ2RRBmmtFCOuf0_O60uOVudyz4vG8dNdv6Ij7QTkkb5Kc7E.jpg?r=a8f" alt="">
+                </div>
+                <div id="sec" class="content" onclick="play('vIZWLvcMS9c?si=kY_mPeeKHGpmXPZg')" >
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABRIIfYfHFWpsjdNJK8k0dhOed72akr6xWOV7bdAmVrwlvUq82LI-q-zxX7Vzbz4u-XWrAzaR_zHY4FYGYCSzxb5We45FqYklr40LM7K8y-yJ-HuS90nMVIK3CvhAF-3rXiOe.jpg?r=32f" alt="">
+                </div>
+                <div id="third" class="content" onclick="play('fjmthQ0AZnI?si=l-xtknlTI1yQz4yJ')" >
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABWwKqOLUW7Hb4Zl-w4T2Avg0o1Xj7CRT2Ui6w6m62TCaFuu0EyGCr_M1ZAHBqTMOn__Q1XzlfNdkS2hdjF7ICo8ax5nUpLsVS3-jJdKJYlvrOp-4IPaEArxkrNVhfnZtf2Ty.jpg?r=4cb" alt="">
+                </div>
+                <div id="fourth" class="content" onclick="play('WTJW2Ol1c0g?si=JyzzuuNvtwFr-Yp3')" >
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABTNY0M_0pqOw_GuH2A_lVF-OTh1CZVPomeRGq88qUxmXExypYU43q7_pFoE4_XH_93zEKhTW2rXEK0gGe36PLoFPr_b0hUH-MHSHBpD3f3lVUqw727DLV_0VC05sM8ljTuN0.jpg?r=61c" alt="">
+                </div>
+                <div id="fifth" class="content" onclick="play('WPlXILGpOFk?si=ZuVTMZUVIPbic40q')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABfbO64zsfIeQZVpSYEboO4-7SSYMuXfHd1J6s0cdnPu2sprxmRlNZ8qov_lVLzAisasLBYyBzmBnHDrkFVMjnK-wTS2SqanWGjPHUZUqzSRh5q_X6KJ8ogxhybDPcAGVJUgd0SyKszA8kxA8w8nYrBh1jdOKpKKQTOreoo_c8S0zH9NPY0yMCn9RUQjnASQ.jpg?r=df2" alt="">
+                </div>
+                <div id="sixth" class="content" onclick="play('l5OAxkuq850?si=VazOVLASRNq7WqAm')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABda64KRj0Hv3gQmVYePw9BVovTbIYksKRvzWvqBdUSuw0uFmcQjpaNDd_IBKb3_7DssIv2OxeFjTe1nXhFo5AXF8NwyuFIthv5pmgEVyW0iIOcjYzmyYMknrstawD9WOqJAE.jpg?r=ea5" alt="">
+                </div>
+                <div id="seventh" class="content" onclick="play('dbtG_OfKiIs?si=SEjcS4LdkZS-LiRO')" >
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaFVoCnPltxEE2xBICLFagrH5NvuhKiIdPSNedQEIm_i3SZV7xywCv1XTCj0BQhwvfVQ0fnEVnucmwL2-En7GumTUALnGfSCbiTnZhUQA8Ahsn5M230grr9u1ELQBst4kcsI.jpg?r=298" alt="">
+                </div>
+                <div id="eigth" class="content" onclick="play('_J8tYxYB_YU?si=RYsfD_kNSyxpWPgN')" >
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVAVCQH88olIt7K0ZtZs345P5urJxHtn9HqPRU1GooNlCHm0yF_YUg7Iiz2VDHUKY88A2CkvFW0k_oMbey8QoCA9RWu8TkBd3LyVapQyVlrO3Da-hUriJQ9WdSZM3n31HAWD.jpg?r=bb6" alt="">
+                </div>
+                <div id="nineth" class="content" onclick="play('EpxY2n_LWQs?si=EovziZyUJI9bTBxV')" >
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeo9BlTK_FuegQFhVPVPR1FqUK8Z4J_JOOiEw0EchlTvZe3rx4_mSa2wlnMJnu_1lnr3Kggqh8XWBA49RikYJ75-Wh8NTvAfSawfrE6bYmdeF-EGwny1TAptGEdQkzgSg7EB.jpg?r=67c" alt="">
+                </div>
+                <div id="tenth" class="content" onclick="play('iWx_o5Iatpw?si=bvWJkYAqGBEmKRVT')" >
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSjbhZ6rQtNYwrLzahRAL7a7trR7erCS3oVnoUx7c8ujO6gxDlY99fYcz91LQ6YJuKdFltlwP1zXpERTOwC2o2nmDd_NCW0gol3pkUs4nwdJ7W_5sU1psfpI50BY1z4z28R_.jpg?r=86b" alt="">
+                </div>
+                <div id="eleventh" class="content" onclick="play('V2feu2_aYzk?si=6JNW1JACr7ibyoQt')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVoZC2sIsxLizRW-cKPHDxvQg_7CGPVvcK7QocQ2RrBevyX587QAqkTCkbHJuat3xFEjRFEFxZ-Z0yCF_MueMoV0YOvzS27jC2QzexQKeR5nvX7saEC3hkhH8p_OxkNcTMTM.jpg?r=5a7" alt="">
+                </div>
+                <div id="twelth" class="content" onclick="play('8xSG_4urDc8?si=eUyIT7elv-W2hg5M')" >
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcSaBASsGFqiPTCYNr9jHaS1n1TsCVXLY0Rr6vXW6uno4NykHOuj-isFkaSekQZXVyMz6ciKFRCawhsXF1cSCoiNoE-6VuNvktagHLPi8i_mMvWM1ZeYO3axJX7zQq4ki2OT.jpg?r=e43" alt="">
+                </div>
+                <div id="r-bttn" onclick="rightfun('content-1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <div id="Content">
+            <div id="t-text">
+                <p style="color: rgb(255, 255, 255); font-size: 22px; font-weight: 550; transform: scaleY(1.05); margin-left: 55px;">Trending Now</p>
+            </div>
+            <div id="content-2">
+                <div id="l-bttn" onclick="leftfun('content-2')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                </div>
+                <div id="first" class="content" onclick="play('ncGvvocG6XU?si=tzK0sqdCj6puSoA4')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABX7f3eDkO_OLJjtT-nb_h7xkDZp0l4JpSmlGbz_8UfMe9lykW7IAvgL_viGn0Up2UDjAnnK_f3x-ZFQKjP80PRMLPKsVZwrQje4ErzeGSvVzAqYeosg1e9OnA4RJKUERXyCdWpWKuW7F9ihURHt4Q1D8aiAW3dZEo5B9RBBttrt1DAUE9EtBoMseRlWA3pbdmWwsxdnlX14eZFpMLbWEIEawZTjQVCJRKt81skUTNcB4vANPDtmOT0sSU2tiF0gGOhvQQ516NkSh9IfIPDbpSajDe3riEPNths3Rw5-ghIBV61skKTOVxf-g-dYKqS9PC731WeMB6MKRH9Yeq7epGdo.webp?r=914" alt="">
+                </div>
+                <div id="sec" class="content" onclick="play('BT0zd0kmTxM?si=TdgsL5GN5rsZyFNR')" >
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABSoom_VjY1_0KGiSjhqSTSXHccl9-teZ1PftxyMnhUs517ioYytVYOyA0UaGxhZ-R44Za9R380YNSpwppOmfSV5nQrGcFzr3xK0.webp?r=893" alt="">
+                </div>
+                <div id="third" class="content" onclick="play('8xSG_4urDc8?si=9vAWjg3o5bCd0uCP')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABUu-vJuBZ6OzVnSqQZjmD-FWRVr0q2HwVxyHE8YeNhtPxWGwxmqbY_SNTREdsnB65OuWGuq2bhn7Kvu86ViMNld2eEE2Wg8pMY5YQSwYOZ_fXbi8ZzOUMEbZ6gFaiCy2H4Ny.jpg?r=079" alt="">
+                </div>
+                <div id="fourth" class="content" onclick="play('FZYhL_bVQUQ?si=jn2740EIWdbn7VLE')" >
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABZ_sAnsv7zPnIZ34WfRWwMw0bnWGrsWntHjgd-C-r3NfaRiPwg0FVN9jpQmnxnujLmjazHIOG_HHB2ovHLpUaNv5cOC6gkOtB0w.webp?r=ddf" alt="">
+                </div>
+                <div id="fifth" class="content" onclick="play('CycxM8yVk6Y?si=N30W26YkcyTT4AzS')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABeD6yn9qIU7x8DKl54UzMYnbK_f1oaTY4XIH0zYOQK0ZIDnsHGgTkO8BWJQs6CzKhq8GL9-K3NSbbpmNpwkmflSzsqjgY9d7lAWC_xF9Yeou9C4r3Be9N08vZX780I1JhBbF.jpg?r=8a4" alt="">
+                </div>
+                <div id="sixth" class="content" onclick="play('UoaaQx71oNc?si=B98rw5sXu_m81hNW')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABYVsed3wvaQQkWdyJMhNXRmXRQXVdtswB3zf2d2-pPF_sc-OlfsD2Brj412yOSGCbT4RqyBTfyHQJSYI4O6y0uErKVv-wC_aYmngabvsYSaPIjnGLKw57RQAOFVav2FEjL5q.jpg?r=58f" alt="">
+                </div>
+                <div id="seventh" class="content" onclick="play('0q7bKjLa0Nc?si=Z-smHnM9TebEx2FF')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbiKmEWVXdN2uGupcxNspq7kx7mxA2o58-Q-n8jk_we7i3YPOQz91XByUY8hrEc1izFhU02YQx9UpLOJrkHznt2EU6nYMpat9wA.webp?r=0de" alt="">
+                </div>
+                <div id="eigth" class="content" onclick="play('JtdCIn47v5g?si=Whos7vxVtz7DrsUO')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdyN4FCu4yCmp0a1sjLjVEBIxyXcKWELkOFqThyUEUpnyImJGsQB9-yMxXEkmbJ8vKXRcUVHNdlXUwnNk6Zbk68cZ58GxK30NZU.webp?r=de0" alt="">
+                </div>
+                <div id="nineth" class="content" onclick="play('lEvDTWZZxdc?si=JCVwEcPTKtKMQ4In')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZG_hI_ALGxFdtltz6hOf_UMw3yDqn0P-_Zpz-CfdCk75-iKvQsszk-Fvitn4u1OAx_DR5elqMFyKcGEh3loXkxosOy5LI2rk7KvRfmFrPM6htwq_jKDb-Cl9l2E5h7VXxKh5hc_0OnChTcxyrG_GwsnLE_L9S8wIYXaszZZ7vN3g2hn5NqiwbsA1wEuAZM.jpg?r=a95" alt="">
+                </div>
+                <div id="tenth" class="content" onclick="play('FJrpcDgC3zU?si=je0v-AlvS-zZDHJf')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUW7-5TWv4bTk_B3QtnOSknIoLVV6E9B9esjI0FGqxlyrdI2amTsUBsS-fDx4OiHL7DdOsxIdOdQuvCHGi-Q2LJS3K-YN3Ayie0.webp?r=59e" alt="">
+                </div>
+                <div id="eleventh" class="content" onclick="play('R6savS7m0Fg?si=AuK3UFat-doN2Wqg')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdkzZVeTlnJHZv_9Zyb-aYyRQAchOap5TW_ZTJqyDjYOzTIHePL2NzLfE5pvQpbWyrGsKTXUF1HWG6uV5blyDYVjQjcJeV_62oY.webp?r=63f" alt="">
+                </div>
+                <div id="twelth" class="content" onclick="play('zgfy3i8jLYk?si=rEJMmHTNDBxE1h_7')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeHSLcLnfMs14ovoN7yMcBjJHVXZyrOTg7D_42M8jMW9pac_sLH4F9yrNECxYi3w3hIzD8yQjDerWG4W33siL16AdGCvoVNRg7jXctsAzgiFJnIa4Mf_GP5JAxaVu7QmqxFpbRY4rj40q6bgWrDNRTbJ81d2DIoSAul5Q-eNE0X5Oa78ZeEiAceo3hB25lyAtVU4BuRtL_vdOZSPnnyBANGRD-kl962QK3jOSgIW8KyOlm2H6kqMymZZv95hTMDxb0cmiD46yOqrKxSWR8WLB0oBMk0YBWMUHOjW3JPCFBty1lOsFQCiNMr302zOzyWn-xu54CeK3YEXlbi6hU_CHvUkymT780fBPrWj_8ZsP_oavmDfm5I.jpg?r=545" alt="">
+                </div>
+                <div id="r-bttn" onclick="rightfun('content-2')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <div id="Content">
+            <div id="a-text">
+                <p style="color: rgb(255, 255, 255); font-size: 22px; font-weight: 550; transform: scaleY(1.05); margin-left: 55px;">Anime</p>
+            </div>
+            <div id="content-3">
+                <div id="l-bttn" onclick="leftfun('content-3')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                </div>
+                <div id="first" class="content" onclick="play('Pm-wNmS9RGI?si=Fk68u3Zr0yC1BwD9')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABSvgFxa8NRvrJxZJ84MDx_oBI5zLb0krY-AMT1hfDij4mtkZDg7Rt53mQWDg-S9_7ITFnEKFD5aEulAvcYEZNVqM-ypQN1Enfq8.webp?r=e46" alt="">
+                </div>
+                <div id="sec" class="content" onclick="play('nQeIObeB--8?si=IS67p0SOGXDBD5gl')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdbBukH45tHPkLm6j1shCSWY2Xt7JWX0bs6fE3xufylxoekTI0LfzBBTtwY-MbIwGaByISzQQrfMWSEpGL6Y66pOGBpO-5nFk-ncYz9OspVQ2ZrOjf_OcYHhbJBRgr4rAx9nID2LO816RMT8Tsv7mCpawbeqzqL6p_tmGNcQcePJjHwq9iwGvSuBw7VREaKW9fOFFrNbEXl3vwbhTD96JgSbzMDVliK9kx514pCIRVBksVqvgpKmoDvATAXC0EPmjuTFvd8BaWSCkDjBIAnJ40xFUyioiGEWS-0YtljmeTLcGTqvCuIZoDqZgYD_btRjE4mlXChb0m01HEyq5FqLP_j4NMeWphGNSc9FNoRSVCX8PiJKlOStNS1lJhzrk0Qj-1VudEMudmnUW0YMKzT1TlJkul07RZwQJ2ZevW6RrC8CPg.webp?r=c05" alt="">
+                </div>
+                <div id="third" class="content" onclick="play('f8JrZ7Q_p-8?si=-cCkcWBru1XeXfdN')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABRGa3UO0njbNw0kFsuP_cI0vpQXciHjFtGtuiMKESYoPq2mPkWyEPhR1Srdy9qcBoglpt93n8Xu22BzwiyCso2MwtMU_W9IOpQc.webp?r=43a" alt="">
+                </div>
+                <div id="fourth" class="content" onclick="play('Poo5lqoWSGw?si=VbxypMTIZjdIFzMB')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABZqrzAzUWstbIA-GwexeWzI3CPjAJzvxSHdcv53jfUSR07qzgk7GOtTOQHt7wlvs7K-Qns40s0ODA07mDVXq4u-ZwO8lS2-DGYk.webp?r=d7c" alt="">
+                </div>
+                <div id="fifth" class="content" onclick="play('u3G5C_sEjgc?si=nY7yHep0zDK70a2h')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABUbJZDxLJCkzkscwmCzzUSzH3LSi3kvOSPnBeO6tSgZ6CbSLXiOsK5M4jmq11dQW_m8jJOya_soWAJjuRHuktJLnkRP_DSSuz5M.webp?r=7d5" alt="">
+                </div>
+                <div id="sixth" class="content" onclick="play('oXZJ7CYshzc?si=GfYeS6_LefCC1rQW')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABRpGdrm5h2l24b9oRLk0aMQ0lm3oQJ_x__rCkxV7wcvSSXUQ2F7IwvEQWTc1yjQOCoU4JmiCG7m-1Ae1q_x4VkgXjTcyfr8VoPA.webp?r=b36" alt="">
+                </div>
+                <div id="seventh" class="content" onclick="play('c6PQSi1xs2E?si=0_g_WJJCVLcpPMHF')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZGx60JVhdH832X_BLBMGnZojNMt43Kqpa140ezzONeJpSbeEOpKNv0w3Gb7CU_UN-Wxt6Ao64ADQ8PvSFdEV406T-yOesGWuNo.webp?r=5cf" alt="">
+                </div>
+                <div id="eigth" class="content" onclick="play('xniBk7zAKMY?si=FsZUvEiPB5-YM3y6')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZsjx6GPPiROzUj2MEP30bWxF9zlyx5hSkRf4EIPWweV0gCRFHBUB_myvS__4kHwSKqO58pE-PSNc7U8fmD2cyP9oPtdUldjjhQxXupJigaicZWG0yPXFpyh7En7mNlr791j.jpg?r=1ec" alt="">
+                </div>
+                <div id="nineth" class="content" onclick="play('CCXLUQzuigw?si=R3iS5IJtOOx4qLxV')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABW-cxfJ90elGLBeN6O2ayWo5xyFeFGEPkuEYk5ogHyMrvuEjLxL6MRX3J2nuK4PhWLjtPtGtb6xhg4jpEUJauocGkfGGrBpuNP0.webp?r=d4a" alt="">
+                </div>
+                <div id="tenth" class="content" onclick="play('22R0j8UKRzY?si=tBORQ7H-ABSe7Pnk')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZQ06U4iPfgscVHadu_a9ft3-MpreHQ8Ly2AdLWD3wZ2iuJIw61v0cpP_XOEcPGefONKGjc3OijI0uN5PxnePYXcPYmuLxPJk4A.webp?r=777" alt="">
+                </div>
+                <div id="eleventh" class="content" onclick="play('biL13L6UXOQ?si=OF_BUOdkplSpIToi')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZDhFEVjgMMpHigiB5sH1cRw2YfWbNJxcDzNtJ2m5l4pUHIZiksLqeW0LoBdcujoN_gG0V82oDYD7U3uvZfslcvH1m4ftJWpxUM.webp?r=05b" alt="">
+                </div>
+                <div id="twelth" class="content" onclick="play('tLdLTSnmnoA?si=LLrwC3A2Yg8m2kAI')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYHUU0Fk1OyIQ1ET2jvfnk3SUr8i-RS9keeTjqDZRLPqvLgPpaoxrafNsyqioSqtAOyAqT9RUjx0pKgCLXYvkDLsfwWmlAF6qqpdVz42TBlTHnaavLFx9FmWusOH67SvVaX7.jpg?r=376" alt="">
+                </div>
+                <div id="r-bttn" onclick="rightfun('content-3')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <div id="Content">
+            <div id="a-text">
+                <p style="color: rgb(255, 255, 255); font-size: 22px; font-weight: 550; transform: scaleY(1.05); margin-left: 55px;">Bollywood</p>
+            </div>
+            <div id="content-4">
+                <div id="l-bttn" onclick="leftfun('content-4')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                </div>
+                <div id="first" class="content" onclick="play('P2KRKxAb2ek?si=CMfv0Qbeshc_3aEv')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeS-kxc4dU7A2n0DS1GVNgJ3e6QjTXCXR9Gq-LdW4T_PhbAPmS3B3bKus0oa47RlI1JMPIQSOTRle3ytphNY9X8Zf-Kh6q6VTz4.webp?r=520" alt="">
+                </div>
+                <div id="sec" class="content" onclick="play('i7yFiUio0u0?si=h_xZVKLe-DwSOPJB')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABStjngjtP7M94HrtPR1R2CNeUoUvQFZ_P5kJy-2rtDQkPP15-F778__FWKCl4s-NuFNSKKwL4Nbfki7BHPAcAN2jqRpWEdadTSI-My0VoEV504F2lMk8fUaqT4pS6I2bGG8-.jpg?r=fa9" alt="">
+                </div>
+                <div id="third" class="content" onclick="play('tC-HGUhxyyc?si=dAEvhKEMEV_Rn24A')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABWSo5CiAKyPq7hIjgSDibjO6j5DaGn_mOE1XVxESD6gmjMJUcntIig-hPBz8fR36f5ATTJSf4MqWuMvNpUyfA5t1nH2uHgrGPZI.webp?r=12a" alt="">
+                </div>
+                <div id="fourth" class="content" onclick="play('sotrgeTvOIo?si=UYBI89DiSTe435rx')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQFX439ThNzUHTddpLABg7yIKVM6jm2Nh1hGxkDVbb4i5Lu0jVi52IpUflfZ0HBv_IoNGDOl41oNjeSTvAUmdYJyQ5t_gUTQrE4.webp?r=b07" alt="">
+                </div>
+                <div id="fifth" class="content" onclick="play('lt_bDfnXKGM?si=XA9SNAUxzxTUGy6a')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABT3E7SEt3ZZW7eQUKq48jtBG6DzeZoRpOvpOLzAmjnR0-jHmEQttMpHxseHsrhqWwXCBzpc4Z7qtMpl37NYou7-RqBfAKJoQdvnEKrZSp5Z_0c3iaNAGTpdCTzOl9gmoCIHX.jpg?r=85a" alt="">
+                </div>
+                <div id="sixth" class="content" onclick="play('XJrRrMCEmp8?si=oSLcI_ehovD_4jcG')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABf3DUNimBas3_6zVnGw4Xs1hBOjA-UyTMqVB146INDe2YeEQqzl98obQQfDffFDDFV_RiSMB_K1eHLUJWX-u3Fc74Sna7gDLFSs.webp?r=6e4" alt="">
+                </div>
+                <div id="seventh" class="content" onclick="play('MWOlnZSnXJo?si=7zMOYLzYjzajwonG')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQ37Zc7cvKzjOsVVRG3EPPjPC6cakTcIgWYkPzldefha2s7TIgtUwd10pRqI6toRHvH6NF-M2y8ZHCjqHJ6HEqf5VAhHvNOWYCc.webp?r=6f7" alt="">
+                </div>
+                <div id="eigth" class="content" onclick="play('JzGGF4JPFIQ?si=9y-rzLj_Chnzlg4d')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYzcgGooOYR9njrMMgJyiXk6_gCvtb1lz0PQsdwCcq5hBCZn9mJGBkVfXK8NEWsrrk2KXeeIQTjG_X_YxUWp_ZHlpHxkB1GEA9s.webp?r=26d" alt="">
+                </div>
+                <div id="nineth" class="content" onclick="play('RiANSSgCuJk?si=rew1UJfwZkglaBJW')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVuFQLqw1an6CvUx--IfhAVvTpTjzSa2cac9RdZimtRDlvQNq3JdISjSTywwao_du0TQe12alsiG2ahGxueOqVqgRIoF6Hi60Ig.webp?r=31d" alt="">
+                </div>
+                <div id="tenth" class="content" onclick="play('J7_1MU3gDk0?si=cmZl3LD5-U543j63')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABWe022cUL6mkdEaPn0Gprt4BM7pvWbbC8omqxCRg40gZVgmCZTgfQMv4b4n9_GybZZp2asS1VtvaCuSssxXvzficCSPaNKzCv3M.webp?r=189" alt="">
+                </div>
+                <div id="eleventh" class="content" onclick="play('Y6ZKXqM7HNQ?si=rp3jjuW96W76fKWn')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfuSDd5DLc9ajewDQq2QjkbKEAveq9ZVQKi-iIU2PrL23pUdN74v6guuAN5uTRvFDDM0LB4o5nhRGAoAjw1VMwmAnMwplsajq8U.webp?r=b5c" alt="">
+                </div>
+                <div id="twelth" class="content" onclick="play('gzeaGcLLl_A?si=eeH5lza95ijBcxOw')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABa-roBD3Di1TLLzzZA-3sj3NSbVrTZwunxFcq8XxMYZiceMmkxki3tWN8wZXOzIkPmQoXvna4HuWK7kRJH2wlEviVkbZp0-eSSk.webp?r=269" alt="">
+                </div>
+                <div id="r-bttn" onclick="rightfun('content-4')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+                </div>
+            </div>
+        </div>
+        
+        <div id="Content">
+            <div id="a-text">
+                <p style="color: rgb(255, 255, 255); font-size: 22px; font-weight: 550; transform: scaleY(1.05); margin-left: 55px;">South Indian</p>
+            </div>
+            <div id="content-5">
+                <div id="l-bttn" onclick="leftfun('content-5')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                </div>
+                <div id="first" class="content" onclick="play('gLPrgMtUSIE?si=lE0oe6UgP3TJ4A0b')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABYJtYZh5AG8R4wC6RznCtpLhxceD21sTrngg7BbqX-YVRlzgtUsL7nwxYi3oElwtuDnYaJY4b9sKAmCXi6bgZWqodUaJFiaYfeA.webp?r=696" alt="">
+                </div>
+                <div id="sec" class="content" onclick="play('0q7bKjLa0Nc?si=M7z5MEWxTxVG0aJO')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABX4YYjrQU5KcVgxK9edTJikYRcpV2wXF8xeO-sVZs-dkBrCe71I6S9BxS3oQ_Zaecd_yTevvulexwpLxWgM5WP1qZ-TiMT4Exds.webp?r=b8a" alt="">
+                </div>
+                <div id="third" class="content" onclick="play('80T1qoy9RSY?si=t-Oa4Ya6vS_vtN7z')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABd5jbao2bn_pAJymMepFUHN_j21YrB_4M7PBQyzhAO0dPyKhwUB7aSkG3GBByiJJWLVXvuxF12HM3Q6uMHQMJlhAXjTdBNAt1eVDbOujaNc6e5cvKMX1t6kWM7tDknGdWzWrkxIoKT5rBg3eGvIPrXmIMPeejRv67AI.webp?r=f4f" alt="">
+                </div>
+                <div id="fourth" class="content" onclick="play('giRSsdSJCf8?si=aqFfpcHKs5CTubJM')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABVLSNEheNh6yX40R2B-qoWFq7zxMrW7ssOU7nF7pX-O0dI8vNJlwIJtQmSv-zkeyhnsYX4aOEwwlgdqjwU3DeV8GLlBeKQV5iK0.webp?r=8fc" alt="">
+                </div>
+                <div id="fifth" class="content" onclick="play('3P-t4WRoW5c?si=AKAVW-KwrZsioOd_')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABZ_sAnsv7zPnIZ34WfRWwMw0bnWGrsWntHjgd-C-r3NfaRiPwg0FVN9jpQmnxnujLmjazHIOG_HHB2ovHLpUaNv5cOC6gkOtB0w.webp?r=ddf" alt="">
+                </div>
+                <div id="sixth" class="content" onclick="play('A0L7XInK27A?si=8TDJvx15yqcFMC9M')">
+                    <img width="260px" height="150px" src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABVbMcz6J3uGYbLHBKfom93AWMu_qEvOZSVHCqR6dWbyGVMdDM8EI3xhJgAWOXTSPeTc7cvdaCdbSHThCpg53-vV6a2KA3R2Hhv4.webp?r=4fd" alt="">
+                </div>
+                <div id="seventh" class="content" onclick="play('nI9TBoMlmv4?si=uSQpZ9cfBl__HKyx')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXLECjI-mKy7b2kPteTOCjejNVFZ2htuG1vQwyzVjRV4jsZjagy7MGeQgoAB_kd38VynN1WQu1zVmmOf5sGxqddNuG7MGDbFqVo.webp?r=7ba" alt="">
+                </div>
+                <div id="eigth" class="content" onclick="play('GY4BgdUSpbE?si=gxT0Huwtv0N1gPPu')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSayr5XRjzs7DwyHYjt5Ev8pmvK22QoLv1vXocyL-6heixE1FN6RPep5G2GK9Fn7G-ihD-mFwsaBuLs-Om5iY6WMu1VfGGw-HaE.webp?r=7ac" alt="">
+                </div>
+                <div id="nineth" class="content" onclick="play('HihakYi5M2I?si=7WNUWmCwjPDrJ8xS')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABU9ky8xlzvsNRX_GJztBraLEYNEg8CLiUHqqTX632mGtIjg-U4p_5uaA0XaSk9HDHF70oG2rU0gnzMo9F_gtOtDINHLppW3yjBU.webp?r=994" alt="">
+                </div>
+                <div id="tenth" class="content" onclick="play('ZAP6q_Zv-4g?si=OfBOqUI-v2kpvthg')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABb6QXHc8bjHqwfrs2726elQ1A2-6ISIZPRs-dp14cJfXe7pkpxL2pfMF19DK-YFUlyNIvrr-fVlmHlkXeA-AN-rItEQcqteVp5s.webp?r=cf8" alt="">
+                </div>
+                <div id="eleventh" class="content" onclick="play('l3fAn4KfYXg?si=lnhv1zg8_0rX4uW4')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXDZ_EupCBIexKZsSusy_jhGNN9srBwU3DnzgrSGtKml9YjAW5UP5ye0Bq_WCSXXqbZzWnm1GXQEN_814CIHLJ25E2Q0fUJ-qaM.webp?r=f8e" alt="">
+                </div>
+                <div id="twelth" class="content" onclick="play('6oKFao0aISA?si=ngbnfpVTOl3KNbps')">
+                    <img width="260px" height="150px" src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcbvYdatRCKNGBVeukCA_ngo-_qqMX3mtwcNmp52bCnAhcIJp8Gc4OSJtheb9FqduQa0X2hPeWInbXyiRXwAxk4xZ2Fb8PWXY_c.webp?r=d86" alt="">
+                </div>
+                <div id="r-bttn" onclick="rightfun('content-5')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

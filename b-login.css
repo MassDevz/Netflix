@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-image:radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url("https://www.bhmpics.com/downloads/netflix-backgrounds-/36.netflix-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header{
+    padding-top: 23px;
+    padding-left: 180px;
+}
+
+#box{
+    width: 26%;
+    background-color: rgba(0, 0, 0, 0.714);;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    padding-bottom: 150px;
+}
+
+#email{
+    width: 100%;
+    color: white;
+    background-color: rgba(40, 39, 39, 0.498);
+    margin-top: 30px;
+    padding: 15px;
+    padding-right: 100px;
+    border: 1px solid rgb(96, 96, 96);
+    border-radius: 3px;
+}
+
+#password{
+    width: 100%;
+    color: white;
+    background-color: rgba(40, 39, 39, 0.498);
+    margin-top: 15px;
+    padding: 15px;
+    padding-right: 100px;
+    border: 1px solid rgb(96, 96, 96);
+    border-radius: 3px;
+}
+
+::placeholder{
+    color: rgb(172, 172, 172);
+    font-size: 13px;
+}
+
+#bttn{
+    font-size: 15px;
+    font-weight: 600;
+    transform: translateY(1.1);
+    width: 100%;
+    background-color: red;
+    color: white;
+    margin-top: 15px;
+    padding: 8px;
+    border: 0px solid rgb(96, 96, 96);
+    border-radius: 3px;
+    transform: scaleY(1.1);
+}
+
+#bttn:hover{
+    background-color: rgb(170, 6, 6);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+#link:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+#checkbox{
+    margin-top: 50px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #000000;
+    border: 1px solid rgb(101, 101, 101);
+    border-radius: 1px;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #000000;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #ffffff;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container .checkmark:after {
+    top: 1px;
+    left: 5.5px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

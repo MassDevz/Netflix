@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="h-homepage.css">
+    <title>Netflix भारत - टीवी शो और फ़िल्में ऑनलाइन देखें</title>
+    <script>
+        function show(ID,svgID){
+            var x = document.getElementById(ID);
+            var y = document.getElementById("sixth");
+            var svg = document.getElementById(svgID);
+            var svgA = document.getElementsByClassName("svg");
+
+            if(x.style.display == "none"){
+                var questions = document.getElementsByClassName("q");
+
+                for(i=0; i<questions.length; i++){
+                    questions[i].style.display = "none"; 
+                    svgA[i].style.transform = "rotate(0deg)";
+                    svg.style.transition = "transform 0.2s ease";
+                }
+
+                
+                x.style.display = "block";
+                y.style.height = "125%";
+                svg.style.transform = "rotate(45deg)";
+                svg.style.transition = "transform 0.2s ease";
+            }
+            else{
+                var questions = document.getElementsByClassName("q");
+
+                for(i=0; i<questions.length; i++){
+                    questions[i].style.display = "none"; 
+                    svgA[i].style.transform = "rotate(0deg)";
+                    svg.style.transition = "transform 0.2s ease";
+                }
+
+                x.style.display = "none";
+                y.style.height = "100%";
+                svg.style.transform = "rotate(0deg)";
+                svg.style.transition = "transform 0.2s ease";
+            } 
+        }
+    </script>
+</head>
+<body>
+    <div id="first">
+        <div id="header">
+            <div id="logo">
+                <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="" height="50px" width="160px">
+            </div>
+            <div>
+                <select name="Language" id="language" onclick="location = this.value;">
+                    <option value="e-homepage.html">English</option>
+                    <option value="#" selected>हिन्दी</option>
+                </select>
+                <a href="h-login.html"><button class="login">साइन इन करें</button></a>
+            </div>
+        </div>
+        <div id="center">
+            <div id="first-text" style="margin-top: 20px;">
+                <p style="color: white; font-size: 45px; font-weight: 800;">अनलिमिटेड फ़िल्में, टीवी शो के साथ भी बहुत कुछ</p>
+            </div>
+            <div id="sec-text" style="margin-top: 20px;">
+                <p style="color: white; font-size: 24px;">जहां चाहें देखें. जब चाहें कैंसल करें.</p>
+            </div>
+            <div id="third-text" style="margin-top: 20px;">
+                <p style="color: white; font-size: 19px;">देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के लिए अपना ईमेल एड्रेस डालें.</p>
+            </div>
+            <div>
+                <form id="search" action="h-1.signup.html">
+                    <div>
+                        <input id="bar" type="email" placeholder="ईमेल एड्रेस" size="40" required>
+                    </div>
+                    <div>
+                        <button id="get-started">शुरू करें <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg></button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <div id="second">
+        <div id="left-txt">
+            <h1 id="left-txt-up">अपने टीवी पर आनंद लें</h1>
+            <p id="left-txt-down">स्मार्ट टीवी, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray प्लेयर के साथ ही दूसरे डिवाइस पर भी देखें.</p>
+        </div>
+        <div id="sec-right" style=" margin-top: 260px;">
+            <img style="z-index: 1; position: relative;"  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <div id="right-video" style="transform: translate(13.3%, -145%);">
+                <video height="72.5%" width="72.5%" style="position: relative; z-index: 0;" autoplay loop muted>
+                    <source src="tv-1.mp4" type="video/mp4"/>
+                </video>
+            </div> 
+        </div>
+    </div>
+    <div id="third">
+        <div id="left-img">
+            <img style="position: relative; z-index: 0;" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+            <div id="left-box" style="position: relative; z-index: 1;">
+                <img height="80px" width="60px" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="">
+                <div id="box-txt" style="transform: translate(22%, -150%);">
+                    <h3 id="st">Stranger Things</h3>
+                    <p id="downloading">डाउनलोड हो रहा है...</p>
+                </div>
+                <div id="animation" style=" transform: translate(80%, -195%);">
+                    <img style="height: 50px; width: 50px;" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="right-txt">
+            <h1 id="right-txt-up">ऑफ़लाइन देखने के लिए अपने शो डाउनलोड करें</h1>
+            <p id="right-txt-down">अपने पसंदीदा शो और फ़िल्में सेव करें, ताकि आप कभी भी इन्हें देख सकें.</p>
+        </div>
+    </div>
+    <div id="fourth">
+        <div id="frt-left">
+            <div id="frt-txt">
+                <div>
+                    <h1 id="frt-txt-up">हर जगह देखें</h1>
+                </div>
+                <div>
+                    <p id="frt-txt-down">बिना ज़्यादा पेमेंट किए, अपने फ़ोन, टैबलेट, लैपटॉप और टीवी पर अनलिमिटेड फ़िल्में और टीवी शो स्ट्रीम करें.</p>
+                </div>
+            </div>
+        </div>
+        <div id="frt-right" style=" margin-top: 260px;">
+            <img style="position: relative; z-index: 1;" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="">
+            <div id="frt-video" style="transform: translate(19%, -200%);">
+                <video height="61%" width="61%" style="position: relative; z-index: 0;" autoplay loop muted>
+                    <source src="tv-2.mp4" type="video/mp4"/>
+                </video>
+            </div> 
+        </div>
+    </div>
+    <div id="fifth">
+        <div id="fifth-left">
+            <img src="https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" alt="">
+        </div>
+        <div id="fifth-right">
+            <div id="fifth-txt">
+                <div>
+                    <h1 id="fifth-txt-up">बच्चों के लिए प्रोफ़ाइल बनाएं</h1>
+                </div>
+                <div>
+                    <p id="fifth-txt-down">बच्चों को जाने दें अपने पसंदीदा किरदारों के साथ उस रोमांचक सफ़र पर जो सिर्फ़ उनके लिए ही है - आपकी मेंबरशिप के साथ फ़्री.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sixth" style="color: white;">
+        <div id="sixth-up">
+            <h1>अक्सर पूछे जाने वाले सवाल</h1>
+        </div>
+        <div id="sixth-mid" style="list-style-type: none;">
+            <li style="display: flex; align-items: center; justify-content: space-between;" onclick="show('q1','qs1')">Netflix क्या है?<svg id="qs1" class="svg" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="Plus"><rect width="256" height="256" fill="none"></rect><line x1="40" x2="216" y1="128" y2="128" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line><line x1="128" x2="128" y1="40" y2="216" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line></svg></li>
+            <div class="q" id="q1">
+                <p>Netflix एक स्ट्रीमिंग सर्विस है जिसके ज़रिए आप हज़ारों इंटरनेट-कनेक्टेड डिवाइस पर तरह-तरह के अवॉर्ड विजेता टीवी शो, फ़िल्में, ऐनिमे, डॉक्यूमेंट्रीज़ का लुत्फ़ उठा सकते हैं.<br><br>आप जब चाहें, जितना चाहें, बिना किसी विज्ञापन के देख सकते हैं – सारा कॉन्टेंट बहुत कम मासिक शुल्क पर. खोजने के लिए हमेशा कुछ नया होता है और हर हफ़्ते नए टीवी शो और फ़िल्में जोड़ी जाती हैं!</p>
+            </div>
+            <li style="display: flex; align-items: center; justify-content: space-between;" onclick="show('q2','qs2')">Netflix की कीमत कितनी है?<svg id="qs2" class="svg" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="Plus"><rect width="256" height="256" fill="none"></rect><line x1="40" x2="216" y1="128" y2="128" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line><line x1="128" x2="128" y1="40" y2="216" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line></svg></li>
+            <div class="q" id="q2">
+                <p>हर महीने की तय फ़ी देकर अपने स्मार्टफ़ोन, टैबलेट, स्मार्ट टीवी, लैपटॉप, या स्ट्रीमिंग डिवाइस पर Netflix देखें. हर महीने ₹649 से ₹149 तक के प्लान. कोई एक्सट्रा कीमत या कॉन्ट्रैक्ट नहीं.</p>
+            </div>
+            <li style="display: flex; align-items: center; justify-content: space-between;" onclick="show('q3','qs3')">मैं कहां देख सकता हूं?<svg id="qs3" class="svg" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="Plus"><rect width="256" height="256" fill="none"></rect><line x1="40" x2="216" y1="128" y2="128" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line><line x1="128" x2="128" y1="40" y2="216" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line></svg></li>
+            <div class="q" id="q3">
+                <p>कहीं भी, कभी भी देखें अपने पर्सनल कंप्यूटर से या स्मार्ट टीवी, स्मार्टफ़ोन, टैबलेट, स्ट्रीमिंग मीडिया प्लेयर और गेम कंसोल सहित Netflix ऐप ऑफ़र करने वाले किसी भी इंटरनेट-कनेक्टेड डिवाइस पर तुरंत देखने के लिए, वेब पर netflix.com पर अपने Netflix अकाउंट में साइन इन करें.<br><br>आप iOS, Android या Windows 10 ऐप से भी अपने पसंदीदा शो डाउनलोड कर सकते हैं. चलते-फिरते और बिना इंटरनेट कनेक्शन के देखने के लिए डाउनलोड का उपयोग करें. Netflix को अपने साथ कहीं भी ले जाएं.</p>
+            </div>
+            <li style="display: flex; align-items: center; justify-content: space-between;" onclick="show('q4','qs4')">मैं कैसे कैंसल करूं?<svg id="qs4" class="svg" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="Plus"><rect width="256" height="256" fill="none"></rect><line x1="40" x2="216" y1="128" y2="128" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line><line x1="128" x2="128" y1="40" y2="216" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line></svg></li>
+            <div class="q" id="q4">
+                <p>Netflix लचीला है. कोई परेशान करने वाले कॉन्ट्रैक्ट नहीं और कोई बंधन नहीं हैं. आप आसानी से दो क्लिक में अपना अकाउंट ऑनलाइन कैंसल कर सकते हैं. कोई कैंसलेशन फ़ीस नहीं है – अपना अकाउंट कभी भी शुरू या बंद करें.</p>
+            </div>
+            <li style="display: flex; align-items: center; justify-content: space-between;" onclick="show('q5','qs5')">मैं Netflix पर क्या देख सकता/सकती हूं?<svg id="qs5" class="svg" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="Plus"><rect width="256" height="256" fill="none"></rect><line x1="40" x2="216" y1="128" y2="128" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line><line x1="128" x2="128" y1="40" y2="216" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line></svg></li>
+            <div class="q" id="q5">
+                <p>Netflix की बहुत बड़ी लाइब्रेरी में फ़ीचर फ़िल्मों, डॉक्यूमेंट्री, टीवी शो, ऐनिमे, अवॉर्ड-विनिंग Netflix ओरिजिनल्स के अलावा और भी बहुत कुछ है. आप जितना चाहें, कभी भी देखें.</p>
+            </div>
+            <li style="display: flex; align-items: center; justify-content: space-between;" onclick="show('q6','qs6')">क्या Netflix बच्चों के लिए ठीक है?<svg id="qs6" class="svg" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="Plus"><rect width="256" height="256" fill="none"></rect><line x1="40" x2="216" y1="128" y2="128" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line><line x1="128" x2="128" y1="40" y2="216" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" class="colorStroke000000 svgStroke"></line></svg></li>
+            <div class="q" id="q6">
+                <p>आपकी मेंबरशिप में Netflix किड्स एक्सपीरियंस शामिल है. बच्चे अपनी तरह से पारिवारिक टीवी शो और फ़िल्मों का आनंद लेते हैं, लेकिन आप उनके द्वारा देखे जाने वाले कॉन्टेंट को कंट्रोल कर सकते हैं.<br><br>बच्चों की प्रोफ़ाइल में PIN से सुरक्षित पैरेंटल कंट्रोल्स होते हैं जिससे आप बच्चों को मेच्योरिटी रेटिंग वाले कॉन्टेंट देखने से रोक सकते हैं और उन टाइटल को ब्लॉक कर सकते हैं जिन्हें आप नहीं चाहते हैं कि बच्चे देखें.</p>
+            </div>
+        </div>
+        <div>
+            <p style="font-size: 20px; margin-top: 50px; text-align: center;">देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के लिए अपना ईमेल एड्रेस डालें.</p>
+            <div>
+                <form id="sixth-down" action="h-1.signup.html">
+                    <div>
+                        <input id="bar-f" type="email" placeholder="ईमेल एड्रेस" size="40" required>
+                    </div>
+                    <div>
+                        <button id="get-started-f">शुरू करें <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg></button>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

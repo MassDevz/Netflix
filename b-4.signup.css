@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+
+#header{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+#sign-out{
+    background-color: white;
+    border: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    transform: scaleY(1.1);
+}
+
+#sign-out:hover{
+    text-decoration: underline;
+}
+
+#bdy{
+    background-color: rgb(255, 255, 255);
+    width: 72%;
+    margin: auto;
+    margin-top: 60px;
+    transform: scaleY(1.1);
+}
+#down{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+#text{
+    padding-top: 50px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto; 
+    width: 72%; 
+    background-color: rgb(255, 255, 255); 
+    font-size: 12px; 
+    color: rgb(109, 109, 109);
+}
+#plan-1,#plan-2,#plan-3,#plan-4{
+    height: 100%;
+    border: 1.35px solid rgb(210, 209, 209);
+    border-radius: 15px;
+    padding: 8px; 
+}
+
+#plan-1:hover,#plan-2:hover,#plan-3:hover,#plan-4:hover{
+    border-color: rgb(138, 138, 138);
+    box-shadow: 0px 0px 14px rgb(159, 159, 159);
+    transition:all 0.15s;
+}
+
+#gradient-1{
+    height: 65px;
+    width: 275px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, #282b87, #ea2e6a);
+    color: white;
+    margin-top: auto;
+    padding: 10px 20px;
+    font-weight: 500;
+    transform: scaleY(1.05);
+    letter-spacing: 0.5px;
+}
+#gradient-2{
+    height: 65px;
+    width: 275px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, #282b87, #c312eb);
+    color: white;
+    margin-top: auto;
+    padding: 10px 20px;
+    font-weight: 500;
+    transform: scaleY(1.05);
+    letter-spacing: 0.5px;
+}
+#gradient-3{
+    height: 65px;
+    width: 275px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, #282b87, #7012eb);
+    color: white;
+    margin-top: auto;
+    padding: 10px 20px;
+    font-weight: 500;
+    transform: scaleY(1.05);
+    letter-spacing: 0.5px;
+}
+#gradient-4{
+    height: 65px;
+    width: 275px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, #282b87, #1282eb);
+    color: white;
+    margin-top: auto;
+    padding: 10px 20px;
+    font-weight: 500;
+    transform: scaleY(1.05);
+    letter-spacing: 0.5px;
+}
+
+#table{
+    width: 230px;
+    border-bottom: 1px solid rgb(187, 186, 186);
+    margin: auto;
+    padding: 10px 0px;
+}
+
+#gray{
+    color: rgba(78, 78, 78, 0.838);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+#bttn{
+    width: 28%;
+    background-color: red;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    padding: 18px;
+    margin-top: 50px;
+    font-size: 24px;
+    transform: scaleX(1);
+    margin-left: 36%;
+}
+
+#bttn:hover{
+    background-color: rgb(252, 43, 43);
+}
